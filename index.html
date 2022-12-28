@@ -5,39 +5,338 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>나서영</title>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/fullpage.css">
     <script src="js/jquery-3.6.0.js"></script>
-    <script src="js/fullpage.min.js"></script>
     <script src="js/main.js"></script>
 </head>
 <body>
-    <div id="fullpage">
-        <section class="section" id="section1">
-            PORTFOLIO
-        </section>
-        <section class="section" id="section2">
-            <h2><a href="prospecs/">PROSPECS</a></h2>
-            <div class="outframe">
-                <div class="inframe">
-                    <div class="img_wrap">
-                        <img src="" alt=""><a href="prospecs/"></a></img>
-                    </div>
-                    
+  <div class="wrap">
+    <!-- header -->
+    <header class="header margin">
+      <div class="logo">
+        <a href="#"><h1> Portfolio</h1></a>
+      </div>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#site">Site</a></li>
+        <li><a href="#design">Design</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+    <!-- header -->
+
+    <div class="content margin">
+      <!-- section1 home -->
+      <section id="home" class="section1">
+        <div class="imgs">
+          <img src="img/home_item1.svg" alt="고양이 캐릭터가 커피잔을 들고있는 그림" />
+          <img src="img/home_item2.svg" alt="커피의 뜨거운 김" />
+        </div>
+        <p>
+          &quot;환영합니다&quot;<br/>
+          <span>묘한</span> 웹 퍼블리셔 <strong>나서영</strong>입니다.
+        </p>
+      </section>
+      <!-- section1 home -->
+      
+      <!-- section2 about -->
+      <section id="about" class="section2">
+        <h2>About</h2>
+        <!-- article1 info -->
+        <article class="info article1">
+          <img src="" alt="">
+          <div class="text_box">
+            <h3>나서영 (만 21세)</h3>
+            <p>
+              &#39;고양이를 너무 사랑한 나머지 닮아가고 있습니다.&#39;<br/>
+              고양이하면 떠오르는 특징은 무엇이있을까요? 까칠함? 도도함?<br/>
+              집사들은 단연 ‘호기심’이라고 답할 것입니다.
+            </p>
+            <br/>
+            <p>
+              새로운 퍼블리싱의 세계를 접하게된 저는 호기로운 호기심으로 이곳저곳 탐험하고 있습니다.<br/>
+              이런 저에게 더욱 <b>새로운 세계</b>를 보여주시겠습니까?
+            </p>
+          </div>
+        </article>
+        <!-- article1 info -->
+
+        <!-- article2 job -->
+        <article class="job article2">
+          <div class="text_box">
+            <h3>내가 생각하는 웹 퍼블리셔</h3>
+            <p>
+              처음엔 이쁘게 만드는게 좋아서 빠지게 된 직업이었습니다.<br/>
+              알고보니 어떤 사람이든 같은 정보를 똑같이 수집할 수 있게 도움을 주는 직업이었습니다.<br/>
+              성별, 나이, 장애와 관련없이 평등한 세계를 만드는 따뜻한 직업이라고 생각합니다.
+            </p>
+          </div>
+          <div class="text_box">
+            <h3>내가 되고 싶은 웹 퍼블리셔</h3>
+            <p>
+              평등한 세계를 만드는 것은 기본이라고 생각합니다.<br/>
+              정보전달에 그치는 것이 아닌, 다채롭게 오감을 자극시켜 웹 페이지 본연의 매력을<br/>
+              극대화 시켜 사람들에게 각인시키는 퍼블리셔가 되고 싶습니다.
+            </p>
+          </div>
+        </article>
+        <!-- article2 job -->
+
+        <!-- article3 skill -->
+        <article class="skill article3">
+          <h3>내가 할 수 있는 것</h3>
+          <ul class="skill_charts">
+            <li class="skill_chart">
+              <div class="text_box">
+                HTML
+                <span data-num="90"></span>
+              </div>
+              <svg>
+                <circle cx="5vw" cy="5vw" r="4.5vw"></circle>
+              </svg>
+            </li>
+
+            <li class="skill_chart">
+              <div class="text_box">
+                CSS
+                <span data-num="90"></span>
+              </div>
+              <svg>
+                <circle cx="5vw" cy="5vw" r="4.5vw"></circle>
+              </svg>
+            </li>
+
+            <li class="skill_chart">
+              <div class="text_box">
+                JQuery
+                <span data-num="80"></span>
+              </div>
+              <svg>
+                <circle cx="5vw" cy="5vw" r="4.5vw"></circle>
+              </svg>
+            </li>
+
+            <li class="skill_chart">
+              <div class="text_box">
+                Photoshop
+                <span data-num="80"></span>
+              </div>
+              <svg>
+                <circle cx="5vw" cy="5vw" r="4.5vw"></circle>
+              </svg>
+            </li>
+
+            <li class="skill_chart">
+              <div class="text_box">
+                illustrator
+                <span data-num="80"></span>
+              </div>
+              <svg>
+                <circle cx="5vw" cy="5vw" r="4.5vw"></circle>
+              </svg>
+            </li>
+          </ul>
+        </article>
+        <!-- article3 skill -->
+      </section>
+      <!-- section2 about -->
+
+      <!-- section3 site -->
+      <section id="site" class="section3">
+        <h2>Site</h2>
+        <!-- site_items -->
+        <ul class="site_items">
+
+          <li class="site_item">
+            <img src="" alt="">
+            <div class="text_box">
+              <h3>Re:interior-film</h3>
+              <ul>
+                <li>
+                  <h4>Type_</h4>
+                  <p>반응형</p>
+                </li>
+                <li>
+                  <h4>Page_</h4>
+                  <p>Main 1 + sub 2</p>
+                </li>
+                <li>
+                  <h4>특징_</h4>
+                  <p>
+                    브랜딩부터 웹 페이지 기획, 디자인<br/>
+                    HTML, CSS, J-query 구현
+                  </p>
+                </li>
+                <li>
+                  <h4>참여도_</h4>
+                  <p>100% (개인 작업)</p>
+                </li>
+                <div class="shortcut_button">
+                  <span>웹 페이지 바로가기</span>
+                  <i class="fa-solid fa-play"></i>
                 </div>
+              </ul>
             </div>
-        </section>
-        <section class="section" id="section3">
-            <h2><a href="mayfield/">MAYFIELD</a></h2>
-            <div class="outframe">
-                <div class="inframe">
-                    <div class="img_wrap">
-                        <img src="" alt=""><a href="mayfield/"></a></img>
-                    </div>
-                    
+          </li>
+
+          <li class="site_item">
+            <img src="" alt="">
+            <div class="text_box">
+              <h3>Re:interior-film</h3>
+              <ul>
+                <li>
+                  <h4>Type_</h4>
+                  <p>반응형</p>
+                </li>
+                <li>
+                  <h4>Page_</h4>
+                  <p>Main 1 + sub 2</p>
+                </li>
+                <li>
+                  <h4>특징_</h4>
+                  <p>
+                    브랜딩부터 웹 페이지 기획, 디자인<br/>
+                    HTML, CSS, J-query 구현
+                  </p>
+                </li>
+                <li>
+                  <h4>참여도_</h4>
+                  <p>100% (개인 작업)</p>
+                </li>
+                <div class="shortcut_button">
+                  <span>웹 페이지 바로가기</span>
+                  <i class="fa-solid fa-play"></i>
                 </div>
+              </ul>
             </div>
-        </section>
-    </div>
+          </li>
+
+          <li class="site_item">
+            <img src="" alt="">
+            <div class="text_box">
+              <h3>Re:interior-film</h3>
+              <ul>
+                <li>
+                  <h4>Type_</h4>
+                  <p>반응형</p>
+                </li>
+                <li>
+                  <h4>Page_</h4>
+                  <p>Main 1 + sub 2</p>
+                </li>
+                <li>
+                  <h4>특징_</h4>
+                  <p>
+                    브랜딩부터 웹 페이지 기획, 디자인<br/>
+                    HTML, CSS, J-query 구현
+                  </p>
+                </li>
+                <li>
+                  <h4>참여도_</h4>
+                  <p>100% (개인 작업)</p>
+                </li>
+                <div class="shortcut_button">
+                  <span>웹 페이지 바로가기</span>
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </ul>
+            </div>
+          </li>
+
+          <li class="site_item">
+            <img src="" alt="">
+            <div class="text_box">
+              <h3>Re:interior-film</h3>
+              <ul>
+                <li>
+                  <h4>Type_</h4>
+                  <p>반응형</p>
+                </li>
+                <li>
+                  <h4>Page_</h4>
+                  <p>Main 1 + sub 2</p>
+                </li>
+                <li>
+                  <h4>특징_</h4>
+                  <p>
+                    브랜딩부터 웹 페이지 기획, 디자인<br/>
+                    HTML, CSS, J-query 구현
+                  </p>
+                </li>
+                <li>
+                  <h4>참여도_</h4>
+                  <p>100% (개인 작업)</p>
+                </li>
+                <div class="shortcut_button">
+                  <span>웹 페이지 바로가기</span>
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </ul>
+            </div>
+          </li>
+        </ul>
+        <!-- site_items -->
+      </section>
+      <!-- section3 site -->
+
+      <!-- section4 design -->
+      <section id="design" class="section4">
+        <h2>Design</h2>
+        <ul class="design_items">
+          <li class="design_item">
+            <img src="" alt="">
+            <div class="hover_box"></div>
+          </li>
+          <li class="design_item">
+            <img src="" alt="">
+            <div class="hover_box"></div>
+          </li>
+          <li class="design_item">
+            <img src="" alt="">
+            <div class="hover_box"></div>
+          </li>
+          <li class="design_item">
+            <img src="" alt="">
+            <div class="hover_box"></div>
+          </li>
+          <li class="design_item">
+            <img src="" alt="">
+            <div class="hover_box"></div>
+          </li>
+          <li class="design_item">
+            <img src="" alt="">
+            <div class="hover_box"></div>
+          </li>
+        </ul>
+      </section>
+      <!-- section4 design -->
+
+      <!-- section5 contact -->
+      <section id="contact" class="section5">
+        <img src="" alt="">
+        <div class="text_box">
+          <h2>Contact</h2>
+          <ul>
+            <li class="contact_item"><a href="#">tel_ 010-9398-2302</a></li>
+            <li class="contact_item">e-mail_ stars2302@naver.com</li>
+          </ul>
+        </div>
+      </section>
+      <!-- section5 contact -->
+      
+      <!-- footer -->
+      <footer class="footer">
+        <p>
+          본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.<br/>
+          &copy;2022.seoyoung all rights reserved.
+        </p>
+      </footer>
+      <!-- footer -->
+    </div><!-- content -->
+  </div><!-- wrap -->
 </body>
 </html>

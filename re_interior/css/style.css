@@ -696,10 +696,6 @@ body {
     width: 70px;
   }
 
-  .header .nav {
-    display: none;
-  }
-
   .header .info_box {
     display: none;
   }
@@ -718,7 +714,8 @@ body {
     height: 100vh;
     margin-top: 0;
     text-align: center;
-    padding-top: 30px;
+    display: none;
+    padding-top: 20px;
   }
 
   .header .nav .main_menu > li {
@@ -829,6 +826,7 @@ body {
   .section2.active .portfolio_title {
     animation: section2Animation 1.5s forwards;
   }
+
   .section2.active .portfolio_imgs li {
     animation: section2Animation 1.5s forwards;
   }
@@ -947,6 +945,13 @@ body {
 
   /* -------------- 1300px Mobile 기기 ---------------- */
   @media (hover:hover) and (pointer:coarse) {
+    .header .nav {
+      padding-top: 0px;
+      
+      /* 모바일 공백 생김 오류 */
+      margin-top: -5px;
+    }
+
     .section1 img {
       height: 100%;
       width: unset;

@@ -27,6 +27,7 @@
 body {
   min-width: 1400px;
   font-family: var(--font-notoSansKR);
+  overflow-x: hidden;
 }
 
 .margin {
@@ -89,6 +90,7 @@ body {
 
 /* header > nav */
 .header .nav {
+  min-width: 785px;
   float: left;
   position: absolute;
   left: 50%;
@@ -160,7 +162,7 @@ body {
 
 /* -------------------- main -------------------- */
 .main_wrap {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -184,10 +186,20 @@ body {
 
 /* -------------------- section1 -------------------- */
 .section1 {
-  width: 1250px;
+  width: 1150px;
   height: 515px;
   margin: calc(100vh + 150px) auto 250px;
   position: relative;
+
+  /* scroll animation */
+  top: -100px;
+  opacity: 0;
+  transition: .7s;
+}
+
+.section1.active {
+  top: 0;
+  opacity: 1;
 }
 
 .section1 .slides {
@@ -195,13 +207,6 @@ body {
   height: 100%;
   margin: 0 auto;
 }
-
-
-/*임시*/
-/* .section1 .slide:nth-child(2),
-.section1 .slide:nth-child(3) {
-  display: none;
-} */
 
 .section1 .slides .slide {
   position: relative;
@@ -251,6 +256,7 @@ body {
   transform: translateY(-50%);
 }
 
+
 /* 임시 */
 .slide .slide_img img {
   width: 100%;
@@ -262,6 +268,7 @@ body {
 .slide3 .slide_img img {
   margin-top: -150px;
 }
+
 
 .section1 .arrow_buttons {
   width: 120px;
@@ -307,6 +314,16 @@ body {
   background-color: var(--gray-bg-color);
 }
 
+.section2.active > .text_box {
+  margin-left: 0;
+  opacity: 1;
+}
+
+.section2.active .content_wrap {
+  margin-right: 0;
+  opacity: 1;
+}
+
 /* section2 > text_box */
 .section2 > .text_box {
   position: relative;
@@ -314,6 +331,11 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);
+
+  /* animation  */
+  margin-left: -50px;
+  opacity: 0;
+  transition: .7s;
 }
 
 .section2 > .text_box h2 {
@@ -349,6 +371,12 @@ body {
   top: 50%;
   transform: translateY(-50%); 
   float: right;
+
+  /* animation */
+  margin-right: -100px;
+  opacity: 0;
+  transition: .7s;
+  transition-delay: .2s;
 }
 
 .section2 .content_wrap .section2_slide {
@@ -448,15 +476,53 @@ body {
   color: #fff;
 }
 
+.section3 .text_box h2:first-child {
+  display: none;
+}
+
 .section3 .text_box h2 {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap;
   font-size: 110px;
   font-weight: var(--font-exBold);
+}
+
+.section3 .text_box h2::before {
+  content: '';
+  position: absolute;
+  bottom: 20px;
+  left: calc(100% + 10px);
+  width: 3px;
+  height: 105px;
+  background-color: #fff;
+
+  animation: cursor 1.5s infinite;
+}
+
+@keyframes cursor {
+  0% {background-color: #fff;}
+  50% {background-color: #fff;}
+  51% {background-color: transparent;}
+  100% {background-color: transparent;}
 }
 
 .section3 .text_box p {
   margin-top: 40px;
   font-size: var(--font-size-XXL);
   line-height: 38px;
+
+  /* animation */
+  position: relative;
+  top: -50px;
+  opacity: 0;
+  transition: 1.5s;
+  transition-delay: 1.5s;
+}
+
+.section3.active .text_box p {
+  top: 0;
+  opacity: 1;
 }
 /* -------------------- section3 -------------------- */
 
@@ -464,6 +530,17 @@ body {
 /* -------------------- section4 -------------------- */
 .section4 {
   margin: 150px auto 150px;
+
+  /* animation */
+  position: relative;
+  top: -50px;
+  opacity: 0;
+  transition: .7s;
+}
+
+.section4.active {
+  top: 0;
+  opacity: 1;
 }
 
 .section4 h2 {
@@ -557,164 +634,6 @@ footer {
 }
 /* -------------------- footer -------------------- */
 
-/* @media screen and (max-width: 1399px) and (min-width: 0px) {
-  #header_wrap {
-    width: 1400px;
-  }
-  #header_wrap header {
-    width: 1260px;
-    padding-left: 70px;
-    margin: 0;
-  }
-  header #logo {
-    width: 185px;
-  }
-
-  header nav {
-    width: 756px;
-    margin-left: 71.5px;
-  }
-  header #join {
-    width: 176px;
-    margin-left: 71.5px;
-  }
-
-  main img {
-    left: -200px;
-    position: relative;
-  }
-
-  #section2 > .text_box {
-    width: 350px;
-    margin-left: 70px;
-  }
-  #section2 #article_wrap {
-    width: 980px;
-    margin-left: 0px;
-  }
-
-  #section4 {
-    width: 1400px;
-    height: 390px;
-    margin: 0px 60px 200px 60px;
-  }
-  #section4 h3 {
-    margin-left: -150px;
-  }
-  #section4 #images .img {
-    width: 300px;
-    height: 300px;
-    margin-left: 20px;
-  }
-  #section4 #images img:nth-child(1) {
-    margin-left: 0;
-  }
-
-  #footer_up {
-    width: 1400px;
-  }
-  #footer_down {
-    margin: 0 60px;
-  }
-  #footer_up li:nth-child(1) {
-    margin-left: 60px;
-  }
-  #footer_down li:nth-child(3) {
-    left: 1010px;
-  }
+@media screen and (max-width:1300px) {
+  body {overflow-x: auto;}
 }
-
-@media screen and (max-width: 1700px) and (min-width: 1550px) {
-  main img {
-    left: -100px;
-    position: relative;
-  }
-}
-
-@media screen and (max-width: 1549px) and (min-width: 1400px) {
-  main img {
-    left: -200px;
-    position: relative;
-  }
-}
-
-@media screen and (min-width: 1921px) {
-  #header_wrap header {
-    width: 1728px;
-    margin: 0 auto;
-  }
-
-  #main_wrap {
-    width: 100vw;
-    background-color: #000;
-    position: relative;
-    margin-top: -140px;
-  }
-  #main_wrap img {
-    margin: 0 auto;
-  }
-
-  #section1 {
-    margin: 300px auto 300px auto;
-  }
-
-  #section2 > .text_box {
-    width: 1728px;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    margin-left: 15px;
-  }
-  #section2 #article_wrap {
-    width: 10000px;
-    margin: 0 auto;
-    margin-left: 30vw;
-    position: relative;
-    left: 50px;
-  }
-  #section3 {
-    background-repeat: no-repeat;
-    background-color: #000;
-  }
-
-  #section4 {
-    width: 1728px;
-    margin: 0 auto;
-  }
-  #section4 .img {
-    max-width: 402px;
-    margin-left: 40px;
-  }
-  #section4 {
-    width: 1728px;
-    height: 550px;
-    position: relative;
-    top: 40px;
-  }
-  #section4 #images .img:nth-child(1) {
-    margin-left: 0;
-  }
-
-  footer {
-    margin-top: 180px;
-  }
-  #footer_up ul {
-    width: 1728px;
-    margin: 0 auto;
-  }
-  #footer_up li:nth-child(1) {
-    margin-left: -10px;
-  }
-  #footer_down {
-    width: 1728px;
-    margin: 0 auto;
-  }
-  #footer_down ul {
-    width: 1728px;
-    margin: 0 auto;
-    position: relative;
-  }
-  #footer_down li:nth-child(3) {
-    right: 0;
-  }
-} */

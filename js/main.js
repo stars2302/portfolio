@@ -9,7 +9,7 @@ $(function(){
       item2 = item1.siblings('.deco_item2');
 
 
-  //1번방법
+  
   $(window).resize(function(){
     var windowWidth = $(this).outerWidth();
 
@@ -255,7 +255,7 @@ $(function(){
 
 
 
-  //-------- section2 article3 차트 animation --------
+  //-------- section2  차트 animation --------
   var skillChart = $('.section2 .article3 .skill_chart');
   var excuted = false;
 
@@ -324,7 +324,7 @@ $(function(){
     }
     
     /* 1000이하 svg */
-    if(windowWidth <= 1450){/* 1450이하 svg */
+    if(windowWidth <= 1000){/* 1450이하 svg */
       skillChart.find('circle').attr('cx','13vw');
       skillChart.find('circle').attr('cy','13vw');
       skillChart.find('circle').attr('r','46%');

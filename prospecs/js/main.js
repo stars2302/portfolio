@@ -152,7 +152,7 @@ $(function(){
       typingIdx++; 
 
     } else{ //끝나면 반복종료 
-      clearInterval(tyInt); 
+      // clearInterval(tyInt); 
     } 
   }  
   

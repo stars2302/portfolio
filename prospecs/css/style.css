@@ -246,29 +246,14 @@ body {
   line-height: 23px;
 }
 
-.slide .slide_img {
+.slide img {
   width: 800px;
-  height: 515px;
   overflow: hidden;
   position: absolute;
   right: 0;
   top: 50%;
   transform: translateY(-50%);
 }
-
-
-/* 임시 */
-.slide .slide_img img {
-  width: 100%;
-  margin-top: -70px;
-}
-.slide2 .slide_img img {
-  margin-top: -200px;
-}
-.slide3 .slide_img img {
-  margin-top: -150px;
-}
-
 
 .section1 .arrow_buttons {
   width: 120px;

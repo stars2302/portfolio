@@ -1,9 +1,9 @@
 $(function(){
 
   //a태그 top방지
-  $("a").click(function(e){
-    e.preventDefault();
-  });
+  // $("a").click(function(e){
+  //   e.preventDefault();
+  // });
 
   //header scroll
   $(window).scroll(function(){

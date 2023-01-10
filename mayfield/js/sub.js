@@ -1,60 +1,117 @@
 $(function(){
-  //header sticky
+  //header scroll
   $(window).scroll(function(){
-    if($(this).scrollTop()>900){
-      $(".main_header_wrap").addClass('sticky');
-    }else{
-      $(".main_header_wrap").removeClass('sticky');
-    }
-  });
-
-  $(window).scroll(function(){
-    if($(this).scrollTop()>0){
+    if($(this).scrollTop() > 100){
       $(".header_wrap").addClass('top');
     }else{
       $(".header_wrap").removeClass('top');
     }
   });
 
-  // reservation modal
-  $(".reservation_btn").click(function(){
-    $(".modal_wrap").css("z-index","100000");
-    $(".header").hide();
+  //menu(nav) show/hide
+  $(".header_btns .menu_btn").click(function(){
     $("body").css("overflow","hidden");
-    $(".modal_wrap").fadeIn();
-    
+    $(".menu_wrap").slideDown(500);
+    $(".header_wrap").css("z-index",0);
   });
-  $(".modal_wrap .close_btn button").click(function(){
-    $(".header").show();
+  $(".menu_wrap .menu_header .close_btn").click(function(){
+    $(".menu_wrap").slideUp(500);
     $("body").css({"overflox-x":"hidden","overflow-y":"auto"});
-    $(".main_slide .slide .slide_btns").css("z-index","10");
-    $(".modal_wrap").fadeOut();
+    $(".header_wrap").css("z-index",9999);
+  });
+
+  // reservation modal show/hide
+  $(".header .header_btns .reservation_btn").click(function(){
+    $(".reservation_modal_wrap").fadeIn(500);
+    $(".reservation_modal_wrap").css("z-index","100000");
+    $("body").css("overflow-y","hidden");
+  });
+  $(".reservation_modal_wrap .close_btn").click(function(){
+    $(".reservation_modal_wrap").fadeOut();
+    $("body").css("overflow-y","auto");
   });
 
   var a = 0;
+  var b = 0;
   $(".date .day td").click(function(){
     a++;
-    if(a % 2 == 1){
+    b = a % 2;
+    if(b == 1){
       $(this).addClass("choice");
     }else{
       $(this).removeClass("choice");
     }
-    a++;
   });
 
-  //menu
-  $(".header_btns .menu_btn").click(function(){
-    $(".header_wrap").hide();
-    $("body").css("overflow","hidden");
-    $(".menu").css("padding-top","10px");
-    $(".menu").slideDown();
+  /* ---------------------------- offers ----------------------------- */
+  //offers content animation
+  var offerContent = $('.contents section .con');
+
+  $(window).scroll(function(){
+    windowScroll = $(this).scrollTop();
+    
+    offerContent.each(function(){
+      var contentOST = $(this).offset().top - 500;
+
+      if(windowScroll >= contentOST) {
+        $(this).addClass('active');
+      } else {
+        $(this).removeClass('active');
+      }
+    });
   });
-  $(".menu .menu_up .close_btn").click(function(){
-    $("body").css({"overflox-x":"hidden","overflow-y":"auto"});
-    $("body").css("padding-top","0");
-    $(".menu").hide();
-    $(".header_wrap").show();
+  $(window).trigger('scroll')
+
+
+
+  //offers title button click
+  var offersBtn = $('.offers_title').find('button');
+  var section = $('.contents > div');
+
+  offersBtn.click(function(){
+    var index = $(this).index() -1;
+    
+    //sub title 글자 변환
+    $(this).addClass('active').siblings().removeClass('active');
+
+    //sub title에 맞는 content 변환
+    section.eq(index).addClass('show').siblings().removeClass('show');
+    index = 0;
   });
+
+
+
+  //offers page button click
+  var pageBtn = $('.page_btns > ul > li');
+  var prevBtn = $('.page_btns > .prev_btn');
+  var nextBtn = $('.page_btns > .next_btn');
+  var index = 0;
+
+  var page = section.find('section');
+  console.log(page)
+
+  nextBtn.click(function(){
+    $(window).scrollTop(0);
+    if(section.hasClass('show')){
+      
+      if(index == 1) {
+        index = 0;
+        pageBtn.eq(index).addClass('active').siblings().removeClass('active');
+        page.eq(index).addClass('show').siblings().removeClass('show');
+      } else {
+        index++;
+        pageBtn.eq(index).addClass('active').siblings().removeClass('active');
+        page.eq(index).addClass('show').siblings().removeClass('show');
+      }
+    }
+
+    console.log(index);
+  });// next button click
+  nextBtn.trigger('click')
+
+  /* ---------------------------- offers ----------------------------- */
+
+
 
   //dining_menu
   var a = 0;

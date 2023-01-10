@@ -68,7 +68,7 @@ body {
 }
 
 .header {
-  height: 150px;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;

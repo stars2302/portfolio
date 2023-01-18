@@ -40,5 +40,12 @@ $(function(){
     $("body").css("overflow-y","auto");
   });
 
+
+
+  //section2 slide
+  $('.wedding_slide').bxSlider({
+    auto: true,
+    pager: false,
+  });
   
 }); //documend ready

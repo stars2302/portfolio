@@ -918,6 +918,10 @@ form span {
     display: block;
   }
 
+  .menu_container .menu .menu_title {
+    margin: 55px 0 20px 0;
+  }
+
   .menu > ul {
     display: none;
   }
@@ -971,10 +975,13 @@ form span {
   }
 
   .menu_container .menu .menu_title {
-    margin: 50px 0 20px;
     font-size: 22px;
   }
   /* 900px header */
+
+  .paging {
+    font-size: 14px;
+  }
 
   .dining_title h2 {
     font-size: 35px;

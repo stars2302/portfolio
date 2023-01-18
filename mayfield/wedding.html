@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MAYFIELD</title>
+  <title>WEDDING : MAYFIELD</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Noto+Sans+KR:wght@300;400;500&family=Noto+Serif&display=swap" rel="stylesheet">
@@ -15,452 +15,685 @@
   <script src="js/wedding.js"></script>
 </head>
 <body>
-  <!-- header -->
-  <div id="header_wrap">
-    <header>
-      <div id="header_btns">
-          <button id="menu_btn">
-              <img src="img/menu_btn.png" alt="MENU" />
-          </button>
-          <button id="reservation_btn">
-              RESERVATION
-          </button>
+  <!------------------------------- header ------------------------------->
+  <div class="header_wrap">
+    <header class="header margin">
+      <!-- header btns -->
+      <div class="header_btns">
+        <button class="menu_btn">
+          <img src="img/menu_btn.png" alt="메뉴" />
+        </button>
+        <button class="reservation_btn">RESERVATION</button>
       </div>
-      <div id="logo"><h1><a href="index.html"><img src="img/logo.png" alt="LOGO" /></a></h1></div>
+      <!-- header btns -->
+
+      <!-- header logo -->
+      <div class="logo">
+        <h1>
+          <a href="index.html">
+            <img src="img/logo.png" alt="메이필드 호텔" />
+          </a>
+        </h1>
+      </div>
+      <!-- header logo -->
+
       <a href="#">MY BOOKING</a>
     </header>
   </div>
-  
-  <!-- header -->
+  <!------------------------------- header ------------------------------->
 
-  <!-- menu -->
-  <div id="menu">
-    <div id="menu_up">
-        <div class="close_btn"><button><img src="img/close_btn.png" alt="close"></button></div>
-        <div id="menu_logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+  <!-------------------------- menu(nav) -------------------------->
+  <div class="menu_wrap">
+    <div class="menu_header">
+      <div class="close_btn">
+        <button>
+          <img src="img/close_btn.png" alt="닫기" />
+        </button>
+      </div>
+      <div class="menu_logo">
+        <a href="index.html">
+          <img src="img/logo.png" alt="메이필드호텔" />
+        </a>
+      </div>
     </div>
-    <div id="menu_down">
-        <div class="menu" id="menu1">
-            <h4 class="menu_title"><a href="#">ABOUT US</a></h4>
-            <ul>
-                <li><a href="brand.html">브랜드 스토리</a></li>
-                <li><a href="#">브랜드 에센스</a></li>
-                <li><a href="#">멤버십</a></li>
-                <li><a href="#">오시는 길</a></li>
-                <li><a href="#">고객센터</a></li>
-            </ul>
-        </div>
-        <div class="menu" id="menu2">
-            <h4 class="menu_title"><a href="offers.html">OFFERS</a></h4>
-            <ul>
-                <li><a href="offers.html">패키지</a></li>
-                <li><a href="offers.html">프로모션</a></li>
-            </ul>
-        </div>
-        <div class="menu" id="menu3">
-            <h4 class="menu_title"><a href="room.html">ROOMS</a></h4>
-            <ul>
-                <li><a href="room.html">클래식</a></li>
-                <li><a href="room.html">빌라</a></li>
-                <li><a href="room.html">코드야드 EFL</a></li>
-                <li><a href="room.html">스페셜</a></li>
-            </ul>
-        </div>
-        <div class="menu" id="menu4">
-            <h4 class="menu_title"><a href="dining.html">DINING</a></h4>
-            <ul>
-                <li><a href="dining.html">낙원</a></li>
-                <li><a href="dining.html">봉래헌</a></li>
-                <li><a href="dining.html">캐슬테라스</a></li>
-                <li><a href="dining.html">라페스타</a></li>
-                <li><a href="dining.html">로얄마일</a></li>
-                <li><a href="dining.html">델리스</a></li>
-                <li><a href="dining.html">이원</a></li>
-                <li><a href="dining.html">SHOP</a></li>
-            </ul>
-        </div>
-        <div class="menu" id="menu5">
-            <h4 class="menu_title"><a href="#">WELLNESS</a></h4>
-            <ul>
-                <li><a href="#">피트니스 클럽</a></li>
-                <li><a href="#">골프 클럽</a></li>
-                <li><a href="#">키즈 클럽</a></li>
-            </ul>
-        </div>
-        <div class="menu" id="menu6">
-            <h4 class="menu_title"><a href="#">MEETING</a></h4>
-            <ul>
-                <li><a href="#">메이필드 볼룸</a></li>
-                <li><a href="#">Meeting Room</a></li>
-                <li><a href="#">Board Room</a></li>
-                <li><a href="#">가든연회</a></li>
-            </ul>
-        </div>
-        <div class="menu" id="menu7">
-            <h4 class="menu_title"><a href="wedding.html">WEDDING</a></h4>
-            <ul>
-                <li><a href="wedding.html">메이필드 볼룸</a></li>
-                <li><a href="wedding.html">카라</a></li>
-                <li><a href="wedding.html">벨타워가든</a></li>
-                <li><a href="wedding.html">아트리움</a></li>
-                <li><a href="wedding.html">소나무정원</a></li>
-                <li><a href="wedding.html">초례청</a></li>
-                <li><a href="wedding.html">엔젤스링</a></li>
-                <li><a href="wedding.html">가족연</a></li>
-            </ul>
-        </div>
-    </div>
-  </div>
-  <!-- menu -->
-
-  <!-- modal -->
-  <div id="modal_wrap">
-    <div id="reservation_modal">
-        <div id="close_btn">
-            <button><img src="img/close_btn.png" alt="close button"></button>
-        </div>
-        <div id="reservation_wrap">
-            <div id="reser_left">
-                <div id="date_wrap">
-                    <table class="date" id="date1">
-                        <tr>
-                            <td class="month">2022.06</td>
-                        </tr>
-                        <tr class="week">
-                            <td>SUN</td>
-                            <td>MON</td>
-                            <td>TUE</td>
-                            <td>WED</td>
-                            <td>THU</td>
-                            <td>FRI</td>
-                            <td>SAT</td>
-                        </tr>
-                        <tr class="day">
-                            <td></td><td></td><td></td><td>1</td><td>2</td><td>3</td><td>4</td>
-                        </tr>
-                        <tr class="day">
-                            <td>5</td><td>6</td><td>7</td><td>8</td><td>9</td><td>10</td><td>11</td>
-                        </tr>
-                        <tr class="day">
-                            <td>12</td><td>13</td><td>14</td><td>15</td><td>16</td><td>17</td><td>18</td>
-                        </tr>
-                        <tr class="day">
-                            <td>19</td><td>20</td><td>21</td><td>22</td><td>23</td><td>24</td><td>25</td>
-                        </tr>
-                        <tr class="day">
-                            <td>26</td><td>27</td><td>28</td><td>29</td><td>30</td><td></td><td></td>
-                        </tr>
-                    </table>
-                    <table class="date" id="date2">
-                        <tr>
-                            <td class="month">2022.07</td>
-                        </tr>
-                        <tr class="week">
-                            <td>SUN</td>
-                            <td>MON</td>
-                            <td>TUE</td>
-                            <td>WED</td>
-                            <td>THU</td>
-                            <td>FRI</td>
-                            <td>SAT</td>
-                        </tr>
-                        <tr class="day">
-                            <td></td><td></td><td></td><td></td><td></td><td>1</td><td>2</td>
-                        </tr>
-                        <tr class="day">
-                            <td>3</td><td>4</td><td>5</td><td>6</td><td>7</td><td>8</td><td>9</td>
-                        </tr>
-                        <tr class="day">
-                            <td>10</td><td>11</td><td>12</td><td>13</td><td>14</td><td>15</td><td>16</td>
-                        </tr>
-                        <tr class="day">
-                            <td>17</td><td>18</td><td>19</td><td>20</td><td>21</td><td>22</td><td>23</td>
-                        </tr>
-                        <tr class="day">
-                            <td>24</td><td>25</td><td>26</td><td>27</td><td>28</td><td>29</td><td>30</td>
-                        </tr>
-                        <tr class="day">
-                            <td>31</td><td></td><td></td><td></td><td></td><td></td><td></td>
-                        </tr>
-                    </table>
-                </div>
-                <div id="people">
-                    <div id="people_left">
-                        <div id="adult" class="people">
-                            <span>ADULT</span>
-                            <div class="modal_btns">
-                                <button class="minus_btn"><img src="img/minus_btn.png" alt="minus button"></button>
-                                <span>3</span>
-                                <button class="plus_btn"><img src="img/plus_btn.png" alt="plus button"></button>
-                            </div>
-                        </div>
-                        <div id="CHILDREN" class="people">
-                            <span>CHILDREN</span>
-                            <div class="modal_btns">
-                                <button class="minus_btn"><img src="img/minus_btn.png" alt="minus button"></button>
-                                <span>1</span>
-                                <button class="plus_btn"><img src="img/plus_btn.png" alt="plus button"></button>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="people_right">
-                        <div id="room" class="people">
-                            <span>ROOM</span>
-                            <div class="modal_btns">
-                                <button class="minus_btn"><img src="img/minus_btn.png" alt="minus button"></button>
-                                <span>1</span>
-                                <button class="plus_btn"><img src="img/plus_btn.png" alt="plus button"></button>
-                            </div>
-                        </div>
-                        <div id="days" class="people">
-                            <span>DAYS</span>
-                            <div class="modal_btns">
-                                <button class="minus_btn"><img src="img/minus_btn.png" alt="minus button"></button>
-                                <span>1</span>
-                                <button class="plus_btn"><img src="img/plus_btn.png" alt="plus button"></button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div id="reser_right">
-                <div id="reser_info">
-                    <div class="info" id="info_date">
-                        <h3>DATE</h3>
-                        <span>2022.06.08 - 06.09 (1박)</span>
-                    </div>
-                    <div class="info" id="info_people">
-                        <h3>GUEST</h3>
-                        <span>어른 </span><span>1</span><span>명</span>
-                        <span>어린이 </span><span>3</span><span>명</span>
-                    </div>
-                    <div class="info" id="info_room">
-                        <h3>ROOM</h3>
-                        <span>객실 </span><span>1</span><span>개</span>
-                    </div>
-                </div>
-                <div id="search_btn">
-                    <button>SEARCH</button>
-                </div>
-            </div>
-            
-        </div>
+    <div class="menu_container">
+      <div class="menu menu1">
+        <h4 class="menu_title">
+          <a href="#">ABOUT US</a>
+        </h4>
+        <ul>
+          <li>
+            <a href="brand.html">브랜드 스토리</a>
+          </li>
+          <li>
+            <a href="#">브랜드 에센스</a>
+          </li>
+          <li>
+            <a href="#">멤버십</a>
+          </li>
+          <li>
+            <a href="#">오시는 길</a>
+          </li>
+          <li>
+            <a href="#">고객센터</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu menu2">
+        <h4 class="menu_title">
+          <a href="offers.html">OFFERS</a>
+        </h4>
+        <ul>
+          <li>
+            <a href="offers.html">패키지</a>
+          </li>
+          <li>
+            <a href="offers.html">프로모션</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu menu3">
+        <h4 class="menu_title">
+          <a href="room.html">ROOMS</a>
+        </h4>
+        <ul>
+          <li>
+            <a href="room.html">디럭스</a>
+          </li>
+          <li>
+            <a href="room.html">디럭스 스위트</a>
+          </li>
+          <li>
+            <a href="room.html">패밀리 스위트</a>
+          </li>
+          <li>
+            <a href="room.html">슈페리어</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu menu4">
+        <h4 class="menu_title">
+          <a href="dining.html">DINING</a>
+        </h4>
+        <ul>
+          <li>
+            <a href="dining.html">낙원</a>
+          </li>
+          <li>
+            <a href="dining.html">봉래헌</a>
+          </li>
+          <li>
+            <a href="dining.html">캐슬테라스</a>
+          </li>
+          <li>
+            <a href="dining.html">라페스타</a>
+          </li>
+          <li>
+            <a href="dining.html">로얄마일</a>
+          </li>
+          <li>
+            <a href="dining.html">델리스</a>
+          </li>
+          <li>
+            <a href="dining.html">이원</a>
+          </li>
+          <li>
+            <a href="dining.html">SHOP</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu menu5">
+        <h4 class="menu_title">
+          <a href="#">WELLNESS</a>
+        </h4>
+        <ul>
+          <li>
+            <a href="#">피트니스 클럽</a>
+          </li>
+          <li>
+            <a href="#">골프 클럽</a>
+          </li>
+          <li>
+            <a href="#">키즈 클럽</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu menu6">
+        <h4 class="menu_title">
+          <a href="#">MEETING</a>
+        </h4>
+        <ul>
+          <li>
+            <a href="#">메이필드 볼룸</a>
+          </li>
+          <li>
+            <a href="#">Meeting Room</a>
+          </li>
+          <li>
+            <a href="#">Board Room</a>
+          </li>
+          <li>
+            <a href="#">가든연회</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu menu7">
+        <h4 class="menu_title">
+          <a href="wedding.html">WEDDING</a>
+        </h4>
+        <ul>
+          <li>
+            <a href="wedding.html">메이필드 볼룸</a>
+          </li>
+          <li>
+            <a href="wedding.html">카라</a>
+          </li>
+          <li>
+            <a href="wedding.html">벨타워가든</a>
+          </li>
+          <li>
+            <a href="wedding.html">아트리움</a>
+          </li>
+          <li>
+            <a href="wedding.html">소나무정원</a>
+          </li>
+          <li>
+            <a href="wedding.html">초례청</a>
+          </li>
+          <li>
+            <a href="wedding.html">엔젤스링</a>
+          </li>
+          <li>
+            <a href="wedding.html">가족연</a>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
+  <!-------------------------- menu(nav) -------------------------->
 
-  <!-- modal -->
-
-  
-  <div id="wrap">
-    <!-- paging -->
-    <div id="paging">
-      <span>HOME > </span>
-      <span>WEDDING</span>
-    </div>
-    <!-- paging -->
-  
-    <div class="wedding_title">
-      <h2 class="wedding">WEDDING</h2>
-    </div>
-  
-    <section id="section1">
-      <div class="img_wrap"><img src="img/wedding_main.png" alt="wedding"></div>
-    </section>
-
-    <section id="section2">
-        <div class="slide_wrap">
-            <ul id="wedding_slide" class="slides">
-                <li class="slide">
-                    <div class="back"></div>
-                    <div class="img_wrap">
-                        <a href="#">
-                            <img src="img/wedding1.png" alt="MAYFIELD BALLROOM" />
-                        </a>
-                    </div>
-                    <div class="text_box">
-                        <a href="#">
-                            <h3>MAYFIELD BALLROOM</h3>
-                            <p>
-                              31미터의 버진로드와 높은 천고가 주는 웅장한 스케일의 대규모 웨딩으로
-                              최대 400명을 수용할 수 있는 베뉴입니다.
-                            </p>
-                            <button>VIEW MORE</button>  
-                        </a>
-                    </div>
-                    <!-- <div class="slide_btns">
-                        <button class="prev_btn">
-                            <img src="img/prev_btn.png" alt="prev" />
-                        </button>
-                        <div class="slide_info">
-                            <span class="slide_cur">1</span>
-                            <span>/</span>
-                            <span class="slide_ea">4</span>
-                        </div>
-                        <button class="next_btn">
-                            <img src="img/next_btn.png" alt="next" />
-                        </button>
-                    </div> -->
-                </li>
-                <li class="slide">
-                    <div class="back"></div>
-                    <div class="img_wrap">
-                        <a href="#">
-                            <img src="img/wedding2.png" alt="CALLA" />
-                        </a>
-                    </div>
-                    <div class="text_box">
-                        <a href="#">
-                            <h3>CALLA</h3>
-                            <p>
-                              탁 트인 전망과 은은한 채광이 아름다운 분위기를 더해주는 공간으로
-                              최대 140명을 수용할 수 있는 베뉴입니다.
-                            </p>
-                            <button>VIEW MORE</button>  
-                        </a>
-                    </div>
-                </li>
-                <li class="slide">
-                    <div class="back"></div>
-                    <div class="img_wrap">
-                        <a href="#">
-                            <img src="img/wedding3.png" alt="BELL TOWER GARDEN" />
-                        </a>
-                    </div>
-                    <div class="text_box">
-                        <a href="#">
-                            <h3>BELL TOWER GARDEN</h3>
-                            <p>
-                              고풍스러운 종탑과 싱그러운 가든이 만들어내는 이국적인 공간으로
-                              최대 600명을 수용할 수 있는 베뉴입니다.
-                            </p>
-                            <button>VIEW MORE</button>  
-                        </a>
-                    </div>
-                </li>
-                <li class="slide">
-                    <div class="back"></div>
-                    <div class="img_wrap">
-                        <a href="#">
-                            <img src="img/wedding4.png" alt="ATRIUM" />
-                        </a>
-                    </div>
-                    <div class="text_box">
-                        <a href="#">
-                            <h3>ATRIUM</h3>
-                            <p>
-                              유럽풍 광장에서 성대함이 느껴지는 공간으로
-                              최대 400명을 수용할 수 있는 베뉴입니다.
-                            </p>
-                            <button>VIEW MORE</button>  
-                        </a>
-                    </div>
-                </li>
-                <li class="slide">
-                    <div class="back"></div>
-                    <div class="img_wrap">
-                        <a href="#">
-                            <img src="img/wedding5.png" alt="PINE GARDEN" />
-                        </a>
-                    </div>
-                    <div class="text_box">
-                        <a href="#">
-                            <h3>PINE GARDEN</h3>
-                            <p>
-                              프라이빗 가든에서 펼쳐지는 영화같은 공간으로
-                              최대 70명을 수용할 수 있는 베뉴입니다.
-                            </p>
-                            <button>VIEW MORE</button>  
-                        </a>
-                    </div>
-                </li>
-                <li class="slide">
-                    <div class="back"></div>
-                    <div class="img_wrap">
-                        <a href="#">
-                            <img src="img/wedding6.png" alt="CHORYECHEONG" />
-                        </a>
-                    </div>
-                    <div class="text_box">
-                        <a href="#">
-                            <h3>CHORYE<br/>CHEONG</h3>
-                            <p>
-                              고증에 의한 전통 예법을 그대로 재현한 전통혼례 공간으로
-                              최대 250명을 수용할 수 있는 베뉴입니다.
-                            </p>
-                            <button>VIEW MORE</button>  
-                        </a>
-                    </div>
-                </li>
-                
-            </ul>
+  <!-------------------------- reservation modal -------------------------->
+  <div class="reservation_modal_wrap">
+    <div class="reservation_modal">
+      <!-- modal_left -->
+      <div class="modal_left">
+        <!-- calender -->
+        <div class="calendar_wrap">
+          <figure class="calendar">
+            <figcaption class="month">2022.12</figcaption>
+            <table>
+              <thead class="week">
+                <tr>
+                  <th>SUN</th>
+                  <th>MON</th>
+                  <th>TUE</th>
+                  <th>WED</th>
+                  <th>THU</th>
+                  <th>FRI</th>
+                  <th>SAT</th>
+                </tr>
+              </thead>
+              <tbody class="day">
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                </tr>
+                <tr>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                </tr>
+                <tr>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                </tr>
+                <tr>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
+          <figure class="calendar">
+            <figcaption class="month">2023.01</figcaption>
+            <table>
+              <thead class="week">
+                <tr>
+                  <th>SUN</th>
+                  <th>MON</th>
+                  <th>TUE</th>
+                  <th>WED</th>
+                  <th>THU</th>
+                  <th>FRI</th>
+                  <th>SAT</th>
+                </tr>
+              </thead>
+              <tbody class="day">
+                <tr>
+                  <td>1</td>
+                  <td>2</td>
+                  <td>3</td>
+                  <td>4</td>
+                  <td>5</td>
+                  <td>6</td>
+                  <td>7</td>
+                </tr>
+                <tr>
+                  <td>8</td>
+                  <td>9</td>
+                  <td>10</td>
+                  <td>11</td>
+                  <td>12</td>
+                  <td>13</td>
+                  <td>14</td>
+                </tr>
+                <tr>
+                  <td>15</td>
+                  <td>16</td>
+                  <td>17</td>
+                  <td>18</td>
+                  <td>19</td>
+                  <td>20</td>
+                  <td>21</td>
+                </tr>
+                <tr>
+                  <td>22</td>
+                  <td>23</td>
+                  <td>24</td>
+                  <td>25</td>
+                  <td>26</td>
+                  <td>27</td>
+                  <td>28</td>
+                </tr>
+                <tr>
+                  <td>29</td>
+                  <td>30</td>
+                  <td>31</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+                <tr>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </figure>
         </div>
-    </section>
+        <!-- calender -->
+        <!-- info -->
+        <div class="info_wrap">
+          <div class="info_left">
+            <div class="info info1">
+              <h3>ADULT</h3>
+              <div class="info_btn">
+                <button class="minus_btn">
+                  <img src="img/minus_btn.png" alt="minus button" />
+                </button>
+                <span>3</span>
+                <button class="plus_btn">
+                  <img src="img/plus_btn.png" alt="plus button" />
+                </button>
+              </div>
+            </div>
+            <div class="info info2">
+              <h3>CHILDREN</h3>
+              <div class="info_btn">
+                <button class="minus_btn">
+                  <img src="img/minus_btn.png" alt="minus button" />
+                </button>
+                <span>1</span>
+                <button class="plus_btn">
+                  <img src="img/plus_btn.png" alt="plus button" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="info_right">
+            <div class="info info3">
+              <h3>ROOM</h3>
+              <div class="info_btn">
+                <button class="minus_btn">
+                  <img src="img/minus_btn.png" alt="minus button" />
+                </button>
+                <span>1</span>
+                <button class="plus_btn">
+                  <img src="img/plus_btn.png" alt="plus button" />
+                </button>
+              </div>
+            </div>
+            <div class="info info4">
+              <h3>DAYS</h3>
+              <div class="info_btn">
+                <button class="minus_btn">
+                  <img src="img/minus_btn.png" alt="minus button" />
+                </button>
+                <span>1</span>
+                <button class="plus_btn">
+                  <img src="img/plus_btn.png" alt="plus button" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- info -->
+      </div>
+      <!-- modal_left -->
+      <!-- modal_right -->
+      <div class="modal_right">
+        <!-- result -->
+        <ul class="result_wrap">
+          <li class="result1 result">
+            <h3>DATE</h3>
+            <p>2022.06.08 - 06.09 (1박)</p>
+          </li>
+          <li class="result2 result">
+            <h3>GUEST</h3>
+            <p>
+              <span>어른</span>
+              <span>1</span>
+              <span>명</span>
+            </p>
+            <p>
+              <span>어린이</span>
+              <span>3</span>
+              <span>명</span>
+            </p>
+          </li>
+          <li class="result3 result">
+            <h3>ROOM</h3>
+            <p>
+              <span>객실 </span>
+              <span>1</span>
+              <span>개</span>
+            </p>
+          </li>
+        </ul>
+        <!-- result -->
 
-    <section id="section3">
+        <!-- search_btn -->
+        <div class="search_btn">
+          <button>SEARCH</button>
+        </div>
+          <!-- search_btn -->
+      </div>
+      <!-- modal_right -->
+
+      <!-- reservation_close_btn -->
+      <div class="close_btn">
+        <button>
+          <img src="img/close_btn.png" alt="닫기 버튼" />
+        </button>
+      </div>
+      <!-- reservation_close_btn -->
+    </div><!-- reservation_modal -->
+  </div><!-- reservation_modal_wrap -->
+  <!-------------------------- reservation modal -------------------------->
+
+
+  <!------------------------------- paging ------------------------------->
+  <div class="paging margin">
+    <span>HOME > </span>
+    <span>WEDDING</span>
+  </div>
+  <!------------------------------- paging ------------------------------->
+  
+
+  <!------------------------------- title ------------------------------->
+  <h2 class="wedding_title">WEDDING</h2>
+  <!------------------------------- title ------------------------------->
+  
+
+  <!------------------------------- section1 ------------------------------->
+  <section class="section1">
+  </section>
+  <!------------------------------- section1 ------------------------------->
+
+
+  <!------------------------------- section2 ------------------------------->
+  <section class="section2">
+    <ul class="wedding_slide">
+      <li class="slide slide1">
+        <div class="back"></div>
+        <a href="#">
+          <div class="img_wrap">
+            <img src="img/wedding1.png" alt="MAYFIELD BALLROOM" />
+          </div>
+          <div class="text_box margin">
+            <div class="text_box_width">
+              <h3>MAYFIELD BALLROOM</h3>
+              <p>
+                31미터의 버진로드와 높은 천고가 주는 웅장한 스케일의 대규모 웨딩으로
+                최대 400명을 수용할 수 있는 베뉴입니다.
+              </p>
+              <a href="#" class="view_more">VIEW MORE</a>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="slide slide2">
+        <div class="back"></div>
+        <a href="#">
+          <div class="img_wrap">
+            <img src="img/wedding2.png" alt="CALLA" />
+          </div>
+          <div class="text_box margin">
+            <div class="text_box_width">
+              <h3>CALLA</h3>
+              <p>
+                탁 트인 전망과 은은한 채광이 아름다운 분위기를 더해주는 공간으로
+                최대 140명을 수용할 수 있는 베뉴입니다.
+              </p>
+              <a href="#" class="view_more">VIEW MORE</a>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="slide slide3">
+        <div class="back"></div>
+        <a href="#">
+          <div class="img_wrap">
+            <img src="img/wedding3.png" alt="BELL TOWER GARDEN" />
+          </div>
+          <div class="text_box margin">
+            <div class="text_box_width">
+              <h3>BELL TOWER GARDEN</h3>
+              <p>
+                고풍스러운 종탑과 싱그러운 가든이 만들어내는 이국적인 공간으로
+                최대 600명을 수용할 수 있는 베뉴입니다.
+              </p>
+              <a href="#" class="view_more">VIEW MORE</a>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="slide slide4">
+        <div class="back"></div>
+        <a href="#">
+          <div class="img_wrap">
+            <img src="img/wedding4.png" alt="ATRIUM" />
+          </div>
+          <div class="text_box margin">
+            <div class="text_box_width">
+              <h3>ATRIUM</h3>
+              <p>
+                유럽풍 광장에서 성대함이 느껴지는 공간으로
+                최대 400명을 수용할 수 있는 베뉴입니다.
+              </p>
+              <a href="#" class="view_more">VIEW MORE</a>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="slide slide5">
+        <div class="back"></div>
+        <a href="#">
+          <div class="img_wrap">
+            <img src="img/wedding5.png" alt="PINE GARDEN" />
+          </div>
+          <div class="text_box margin">
+            <div class="text_box_width">
+              <h3>PINE GARDEN</h3>
+              <p>
+                프라이빗 가든에서 펼쳐지는 영화같은 공간으로
+                최대 70명을 수용할 수 있는 베뉴입니다.
+              </p>
+              <a href="#" class="view_more">VIEW MORE</a>
+            </div>
+          </div>
+        </a>
+      </li>
+
+      <li class="slide slide6">
+        <div class="back"></div>
+        <a href="#">
+          <div class="img_wrap">
+            <img src="img/wedding6.png" alt="CHORYECHEONG" />
+          </div>
+          <div class="text_box margin">
+            <div class="text_box_width">
+              <h3>
+                CHORYE<br/>
+                CHEONG
+              </h3>
+              <p>
+                고증에 의한 전통 예법을 그대로 재현한 전통혼례 공간으로
+                최대 250명을 수용할 수 있는 베뉴입니다.
+              </p>
+              <a href="#" class="view_more">VIEW MORE</a>
+            </div>
+          </div>
+        </a>
+      </li>
+    </ul>
+  </section>
+  <!------------------------------- section2 ------------------------------->
+
+
+  <!------------------------------- section3 ------------------------------->
+  <section class="section3 margin">
+    <article class="banner banner1">
+      <a href="#">
+        <div class="img_wrap">
+          <img src="img/wedding_banner1.png" alt="angel's ring" />
+        </div>
+        <div class="text_box">
+          <h3>ANGEL'S RING</h3>
+          <p>
+            메이필드호텔만의 세심한 서비스와 스타일링을 통해 완벽한 <br/>
+            애프터 파티를 준비해 드립니다.
+          </p>
+          <a href="#" class="view_more">VIEW MORE</a>
+        </div>
+      </a>
+    </article>
+
+    <article class="banner banner2">
+      <a href="#">
+        <div class="img_wrap">
+          <img src="img/wedding_banner2.png" alt="family party" />
+        </div>
+        <div class="text_box">
+          <h3>FAMILY PARTY</h3>
+          <p>
+            우리 아기의 첫 생일, 부모님의 생신연 등 특별한 가족 모임을<br/>
+            소중한 추억으로 만들어 드립니다.
+          </p>
+          <a href="#" class="view_more">VIEW MORE</a>
+        </div>
+      </a>
+    </article>
+  </section>
+  <!------------------------------- section3 ------------------------------->
+
+
+  <!-------------------------------- footer -------------------------------->
+  <footer class="footer margin">
+    <div class="footer_info">
       <ul>
         <li>
-          <div class="banner" id="banner1">
-            <a href="#banner1"><img src="img/wedding_banner1.png" alt="angel's ring"></a>
-            <div class="text_box">
-                <a href="#banner1">
-                    <h4>ANGEL'S RING</h4>
-                    <p>메이필드호텔만의 세심한 서비스와 스타일링을 통해 완벽한 <br/>
-                      애프터 파티를 준비해 드립니다.
-                    </p>
-                    <button>VIEW MORE</button>  
-                </a>
-            </div>
-          </div>
+          <a href="#">고객센터</a>
         </li>
         <li>
-          <div class="banner" id="banner2">
-            <a href="#banner2"><img src="img/wedding_banner2.png" alt="family party"></a>
-            <div class="text_box">
-                <a href="#banner2">
-                    <h4>FAMILY PARTY</h4>
-                    <p>우리 아기의 첫 생일, 부모님의 생신연 등 특별한 가족 모임을<br/>
-                      소중한 추억으로 만들어 드립니다.
-                    </p>
-                    <button>VIEW MORE</button>  
-                </a>
-            </div>
-          </div>
+          <a href="#">이용약관</a>
+        </li>
+        <li>
+          <a href="#">개인정보처리방침</a>
+        </li>
+        <li>
+          <a href="#">이메일무단수집금지</a>
+        </li>
+        <li>
+          <a href="#">Contact Us</a>
+        </li>
+        <li class="family_sites">
+          <button>
+            <span>FAMILY SITES</span>
+            <img src="img/down_btn.png" alt="더보기 화살표" />
+          </button>
         </li>
       </ul>
-    </section>
-  </div>
-
-  <!-- footer -->
-  <footer>
-    <div id="footer_info">
-        <ul>
-            <li><a href="#footer_info">고객센터</a></li>
-            <li><a href="#footer_info">이용약관</a></li>
-            <li><a href="#footer_info">개인정보처리방침</a></li>
-            <li><a href="#footer_info">이메일무단수집금지</a></li>
-            <li><a href="#footer_info">Contact Us</a></li>
-            <li id="family_sites">
-                <button>FAMILY SITES</button>
-                <button><img src="img/down_btn.png" alt="down button"></button>
-            </li>
-        </ul>
-        <span>
-            메이필드호텔 서울 : 서울특별시 강서구 방화대로 94 (07506) <br/>
-            대표이사 김영문     |     T. 02.2660.9000     |     F. 02.2660.9117     |     E-MAIL. mayres@mayfield.co.kr<br/>
-            사업자등록번호 : 109-81-36070     |     통신판매신고번호 : 2007-16-3668
-        </span>
-        <div id="more_info">
-            <a href="#footer_info">더 많은 정보를 만나보세요 </a>
-            <img src="img/next_btn.png" alt="More">
-        </div>
-        
+      <p>
+        메이필드호텔 서울 : 서울특별시 강서구 방화대로 94 (07506) <br />
+        대표이사 김영문 | T. 02.2660.9000 | F. 02.2660.9117 | E-MAIL.
+        mayres@mayfield.co.kr<br />
+        사업자등록번호 : 109-81-36070 | 통신판매신고번호 : 2007-16-3668
+      </p>
+      <div class="more_info_btn">
+        <a href="#">더 많은 정보를 만나보세요 </a>
+        <img src="img/next_btn.png" alt="더보기 화살표" />
+      </div>
     </div>
-    <div id="copyright">
-        © MAYFIELD HOTEL CO,. LTD. ALL RIGHTS RESERVED.
-    </div>
+    <div class="copyright">© 2022.seoyoung all rights reserved.</div>
   </footer>
-  <!-- footer -->
-
-
+  <!-------------------------------- footer -------------------------------->
 </body>
 </html>

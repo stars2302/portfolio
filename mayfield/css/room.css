@@ -756,6 +756,10 @@ body {
     display: block;
   }
 
+  .menu_container .menu .menu_title {
+    margin: 55px 0 20px 0;
+  }
+
   .menu > ul {
     display: none;
   }
@@ -888,7 +892,6 @@ body {
   }
 
   .menu_container .menu .menu_title {
-    margin: 50px 0 20px;
     font-size: 22px;
   }
   /* 900px header */

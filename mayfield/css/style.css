@@ -1391,11 +1391,13 @@ body {
   }
 
   .menu_wrap .menu_header {
+    width: 90%;
     height: 120px;
   }
 
   .menu_container .menu .menu_title {
-    margin: 60px 0 20px;
+    margin: 50px 0 20px;
+    font-size: 22px;
   }
 
   .main_slide {

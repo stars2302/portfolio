@@ -237,3 +237,112 @@ footer #copyright{height: 110px; border-top: 2px solid #fff1e5; line-height: 110
   #section3 .text_box{margin-left: 28vw;}
   #article4 .img_wrap img{transform: scale(70%); transform-origin: -300px top;}
 }
+
+
+@media screen and (max-width: 1500px) {
+
+
+}/* media screen max-width: 1500px */
+
+
+
+@media screen and (max-width: 1200px) {
+  /* screen width 1200px header */
+  .header_wrap {
+    height: 120px;
+  }
+
+  .header .header_btns .reservation_btn,
+  .header > a {
+    display: none;
+  }
+
+  .header .header_btns {
+    width: auto;
+  }
+
+  .header .logo {
+    margin: 0 auto;
+    transform: scale(90%);
+  }
+  /* screen width 1200px header */
+
+  /* screen width 1200px menu */
+  .menu_wrap .menu_container {
+    display: block;
+  }
+
+  .menu > ul {
+    display: none;
+  }
+  /* screen width 1200px menu */
+
+}/* media screen max-width: 1200px */
+
+
+
+@media screen and (max-width: 900px) {
+  .margin {
+    width: 90%;
+  }
+
+  /* 900px header */
+  .header_wrap {
+    height: 100px;
+  }
+
+  .header .header_btns .menu_btn {
+    width: 20px;
+  }
+
+  .header .logo img {
+    width: 180px;
+  }
+
+  .header_wrap.top .header,
+  .header_wrap.top {
+    height: 80px;
+  }
+
+  .menu_header .menu_logo img {
+    width: 180px;
+  }
+
+  .menu_wrap .menu_header {
+    width: 90%;
+    height: 120px;
+  }
+
+  .menu_container .menu .menu_title {
+    margin: 50px 0 20px;
+    font-size: 22px;
+  }
+  /* 900px header */
+
+  .footer {
+    margin: 150px auto 0;
+    font-size: 13px;
+  }
+
+  .footer .footer_info ul {
+    display: none;
+  }
+
+  .footer .footer_info li {
+    margin-right: 10px;
+  }
+
+  .footer .footer_info li.family_sites {
+    display: none;
+  }
+
+  .footer .footer_info p {
+    margin-top: 30px;
+  }
+
+  .footer .footer_info .more_info_btn {
+    margin-top: 70px;
+    left: 0;
+  }
+
+}/* media screen max-width: 900px */

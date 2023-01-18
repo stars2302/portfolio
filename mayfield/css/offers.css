@@ -465,8 +465,16 @@ section article.con > a {
   display: flex;
 }
 
-section article.con .img_wrap:hover img {
-  transform: scale(105%);
+@media (hover:hover) and (pointer:fine) {/* pc */
+  section article.con .img_wrap:hover img {
+    transform: scale(105%);
+  }
+}
+
+@media (hover:hover) and (pointer:coarse) {/* mobile */
+  section article.con .img_wrap img {
+    transform: scale(105%);
+  }
 }
 
 section article.con .img_wrap img {
@@ -505,24 +513,59 @@ section article.con .text_box .unit {
 }
 
 section article.con .text_box .view_more {
-  display: block;
-  font-size: 13px;
   width: 130px;
   height: 35px;
-  border-radius: 17.5px;
-  background-color: var(--main-color);
-  text-align: center;
-  line-height: 35px;
-  color: var(--sub-color);
+  display: block;
+  position: relative;
   margin-top: 70px;
-  transition: background-color .3s;
+  line-height: 35px;
+  border-radius: 17.5px;
+  background-color: #fff;
+  color: var(--sub-color);
+  border: 1px solid var(--sub-color);
+  text-align: center;
+  font-size: 13px;
+  overflow: hidden;
+  z-index: 1;
+  transition: .5s;
 }
 
-section article.con .text_box .view_more:hover {
+section article.con .text_box .view_more::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  right: 100%;
+  border-radius: 17.5px;
   background-color: var(--sub-color);
-  color: #fff;
+  transition: .5s;
+  z-index: -1;
 }
 
+@media (hover:hover) and (pointer:fine) {/* pc */
+  section article.con .text_box .view_more:hover::after {
+    left: 0;
+    right: 0;
+  }
+  
+  section article.con .text_box .view_more:hover {
+    color: #fff;
+    border: 1px solid transparent;
+  }
+}
+
+@media (hover:hover) and (pointer:coarse) { /* mobile */
+  section article.con .text_box .view_more::after {
+    left: 0;
+    right: 0;
+  }
+  
+  section article.con .text_box .view_more {
+    color: #fff;
+    border: 1px solid transparent;
+  }
+}
 
 /* content row layout */
 section article.con_row {
@@ -797,6 +840,7 @@ section article.con_column .text_box {
     width: 90%;
   }
 
+  /* 900px header */
   .header_wrap {
     height: 100px;
   }
@@ -819,12 +863,15 @@ section article.con_column .text_box {
   }
 
   .menu_wrap .menu_header {
+    width: 90%;
     height: 120px;
   }
 
   .menu_container .menu .menu_title {
-    margin: 60px 0 20px;
+    margin: 50px 0 20px;
+    font-size: 22px;
   }
+  /* 900px header */
 
   .paging {
     font-size: 14px;

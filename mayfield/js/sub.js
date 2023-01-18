@@ -45,7 +45,7 @@ $(function(){
 
   /* ---------------------------- offers ----------------------------- */
   //offers content animation
-  var offerContent = $('.contents section .con');
+  var offerContent = $('.offers_contents section .con');
 
   $(window).scroll(function(){
     windowScroll = $(this).scrollTop();
@@ -66,7 +66,7 @@ $(function(){
 
   //offers title button click
   var offersBtn = $('.offers_title').find('button');
-  var section = $('.contents > div');
+  var section = $('.offers_contents > div');
 
   offersBtn.click(function(){
     var index = $(this).index() -1;
@@ -108,11 +108,75 @@ $(function(){
     console.log(index);
   });// next button click
   nextBtn.trigger('click')
-
   /* ---------------------------- offers ----------------------------- */
 
 
+  /* ---------------------------- room ----------------------------- */
+  var $roomSection = $('.room_section');
+  var roomSec1OST = $roomSection.eq(0).offset().top - 500;
+  var roomSec2Article = $roomSection.eq(1).find('article');
+  var roomSec3OST = $roomSection.eq(2).offset().top - 500;
 
+  $(window).scroll(function(){
+    var windowScroll = $(this).scrollTop();
+
+    //room section1 animation
+    if(windowScroll >= roomSec1OST){
+      $roomSection.eq(0).addClass('active');
+    }else{
+      $roomSection.eq(0).removeClass('active');
+    }
+
+    //room section2 animation
+    roomSec2Article.each(function(){
+      var articleOST = $(this).offset().top - 400;
+
+      if(windowScroll >= articleOST){
+        $(this).addClass('active');
+      }else{
+        $(this).removeClass('active');
+      }
+    });//sec2 article each
+
+    //room section3 animation
+    if(windowScroll >= roomSec3OST){
+      $roomSection.eq(2).addClass('active');
+    }else{
+      $roomSection.eq(2).removeClass('active');
+    }
+  });
+
+  $(window).resize(function(){
+    var windowWidth = $(this).outerWidth();
+
+    if(windowWidth <= 1200){//screen width 1200 이하
+      roomSec2Article.click(function(){
+        $('.header_wrap').hide();
+        $(this).parent('.section2').addClass('back');
+        $(this).find('.text_box').show();
+      });
+
+      roomSec2Article.find('.text_box').click(function(){
+        $(this).parent('.section2').removeClass('back');
+        $('.header_wrap').show();
+        roomSec2Article.find('.text_box').hide();
+      });
+    } else {
+      roomSec2Article.off('click');
+      roomSec2Article.find('.text_box').off('click')
+    }
+  });
+  $(window).trigger('resize');
+  /* ---------------------------- room ----------------------------- */
+
+
+
+  /* ---------------------------- dining ----------------------------- */
+  //dining main slide
+  $('.dining .section1 .dining_slide').bxSlider({
+  });
+
+  
   //dining_menu
   var a = 0;
   var b = 0;
@@ -182,30 +246,19 @@ $(function(){
     $(".dining_menu").find("button").removeClass("active");
     $(this).children("button").addClass("active");
   });
+  /* ---------------------------- dining ----------------------------- */
 
-  //dining_slide_main
-  $(".dining_main_slide").bxSlider({
-    auto: true,
-    pager: true,
-    pagerType : 'short',
-    touchEnabled : false
-  });
 
-  //dining_menu_slide
-  $(".dining_menu_slide").bxSlider({
-    auto: true,
-    pager: true,
-    pagerType : 'short',
-    touchEnabled : false
-  });
 
   //slide
+  /*
   $(".wedding_slide").bxSlider({
     auto: true,
     pager: true,
     pagerType: 'short',
     touchEnabled: false
   });
+  */
 
   
 

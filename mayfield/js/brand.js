@@ -40,5 +40,51 @@ $(function(){
     $("body").css("overflow-y","auto");
   });
 
+
+
+  //scroll animation
+  $(window).scroll(function(){
+    var windowScroll = $(this).scrollTop();
+    var $article = $('section article');
+
+
+    //각각 article animation
+    $article.each(function(){
+      var articleOST = $(this).offset().top - 500;
+
+      if(windowScroll >= articleOST) {
+        $(this).addClass('active');
+      } else {
+        $(this).removeClass('active');
+      }
+    });//article each
+
+    //section4 p animation
+    var target = $('.section4 p');
+    var targetOST = target.offset().top - 500;
+
+    if(windowScroll >= targetOST){
+      target.addClass('active');
+    }else{
+      target.removeClass('active');
+    }
+  });//scroll
+  $(window).trigger('scroll');
+
+
+
+  //section addClass 'margin'
+  $(window).resize(function(){
+    var windowWidth = $(this).outerWidth();
+
+    if(windowWidth <= 900){
+      $('section').addClass('margin');
+    }else {
+      $('section').removeClass('margin');
+    }
+  });
+  $(window).trigger('resize');
+
+
   
 }); //documend ready

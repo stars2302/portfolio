@@ -100,7 +100,7 @@ body {
 .header .nav li {
   float: left;
   color: #fff;
-  font-size: 20px;
+  font-size: var(--font-size-XL);
   margin-left: 40px;
 }
 
@@ -566,7 +566,7 @@ body {
 /* -------------------- footer -------------------- */
 footer {
   height: 340px;
-  font-size: 12px;
+  font-size: var(--font-size-S);
   position: relative;
 }
 

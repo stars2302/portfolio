@@ -5,210 +5,350 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>PROSPECS</title>
-  <link rel="stylesheet" href="css/lookbook.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/jquery.bxslider.css" />
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/lookbook.css" />
   <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/jquery.bxslider.js"></script>
-  <script src="js/sub.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="https://kit.fontawesome.com/5abfdc1629.js" crossorigin="anonymous"></script>
+  <script src="js/lookbook.js"></script>
 </head>
 <body>
-  
-
   <!-- header -->
-  <div id="header_wrap">
-    <header id="header">
-        <div id="logo">
+  <div class="header_wrap">
+    <header class="header margin clearfix">
+      <div class="logo">
+        <h1>
             <a href="index.html">
-                <h1><img src="img/logo.png" alt="PROSPECS"></h1>
+            <img src="img/logo.png" alt="PROSPECS" />
+          </a>
+          </h1>
+      </div>
+  
+      <nav class="nav">
+        <ul class="clearfix">
+          <li>
+            <a href="shop.html">SHOP</a>
+          </li>
+
+          <li>
+            <a href="#">EVENT</a>
+          </li>
+
+          <li>
+            <a href="issue.html">ISSUE</a>
+          </li>
+
+          <li class="active">
+            <a href="lookbook.html">LOOKBOOK</a>
+          </li>
+
+          <li>
+            <a href="sponsership.html">SPONSORSHIP</a>
+          </li>
+
+          <li>
+            <a href="#">SMART FIT</a>
+          </li>
+        </ul>
+      </nav>
+    
+      <div class="header_btns">
+        <ul class="buttons clearfix">
+          <li class="button icon">
+            <a href="#">
+              <img src="img/icon_search.png" alt="검색">
             </a>
-        </div>
+          </li>
 
-        <nav>
-            <ul>
-                <li><a href="shop.html">SHOP</a></li>
-                <li><a href="#">EVENT</a></li>
-                <li><a href="issue.html">ISSUE</a></li>
-                <li class="active"><a href="lookbook.html">LOOKBOOK</a></li>
-                <li><a href="sponsership.html">SPONSORSHIP</a></li>
-                <li><a href="#">SMART FIT</a></li>
-            </ul>
-        </nav>
+          <li class="button icon">
+            <a href="#">
+              <img src="img/icon_user.png" alt="로그인">
+            </a>
+          </li>
 
-        <div id="join">
-            <ul class="icons">
-                <li class="icon"><a href="#"><img src="img/icon_search.png" alt="Search"></a></li>
-                <li class="icon"><a href="#"><img src="img/icon_user.png" alt="User"></a></li>
-                <li class="news"><a href="#"><span>NEWS</span></a></li>
-            </ul>
-        </div>
+          <li class="button news">
+            <a href="#">
+              <span>NEWS</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
   </div>
   <!-- header -->
 
   <!-- video_modal -->
-  <div id="lookbook_modal_wrap">
-    <div id="modal">
+  <div class="lookbook_modal_wrap">
+    <div class="modal">
       <iframe width="1640" height="923" src="https://www.youtube.com/embed/H92vIy0O2Pc" title="[PRO-SPECS] 22SS NEW SEASON, NEW PERFORMANCE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
       <iframe width="1145" height="644" src="https://www.youtube.com/embed/tku0vTmTQKM" title="[PRO-SPECS ORIGINAL] 오리지널 스포츠 클럽 'DO WHAT YOU CAN'" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
       <iframe width="1145" height="644" src="https://www.youtube.com/embed/YVLpJ6Jzul8" title=""놀랍도록 자연스러운 나를 발견하다" - 러너 정은영｜프로스펙스" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
   </div>
-
   <!-- video_modal -->
 
-  <div class="wrap margin lookbook">
-    <div id="cons">
-      <div class="con" id="con1">
-        <!-- title -->
-        <h2 class="title" id="con1_title">22SS PERFORMANCE LOOKBOOK</h2>
-        <!-- title -->
-        <ul class="imgs_wrap">
-          <li class="left">
-            <div class="img_wrap"><img src="img/lookbook1-1.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-            <div class="img_wrap"><img src="img/lookbook1-2.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-          </li>
-          <li class="center">
-            <div class="center_up">
-              <div class="img_wrap"><img src="img/lookbook1-3.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-              <div class="img_wrap"><img src="img/lookbook1-4.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-            </div>
-            <div class="video" id="video1">
-              <div class="video_wrap">
-                <button class="video_play_btn">
-                  <img src="img/video_play_btn.png" alt="play button" />
-                </button>
-              </div>
-            </div>
-            <div class="center_down">
-              <div class="img_wrap"><img src="img/lookbook1-5.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-              <div class="img_wrap"><img src="img/lookbook1-6.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-            </div>
-          </li>
-          <li class="right">
-            <div class="img_wrap"><img src="img/lookbook1-7.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-            <div class="img_wrap"><img src="img/lookbook1-8.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="con" id="con2">
-        <!-- title -->
-        <h2 class="title" id="con2_title">22SS PERFORMANCE LOOKBOOK</h2>
-        <!-- title -->
-        <ul class="imgs_wrap">
-          <li class="left">
-            <div class="img_wrap"><img src="img/lookbook2-1.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-            <div class="img_wrap"><img src="img/lookbook2-2.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-          </li>
-          <li class="center">
-            <div class="center_up">
-              <div class="img_wrap"><img src="img/lookbook2-3.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-              <div class="img_wrap"><img src="img/lookbook2-4.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-            </div>
-            <div class="video" id="video2">
-              <div class="video_wrap">
-                <button class="video_play_btn">
-                  <img src="img/video_play_btn.png" alt="play button" />
-                </button>
-              </div>
-            </div>
-            <div class="center_down">
-              <div class="img_wrap"><img src="img/lookbook2-5.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-              <div class="img_wrap"><img src="img/lookbook2-6.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-            </div>
-          </li>
-          <li class="right">
-            <div class="img_wrap"><img src="img/lookbook2-7.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-            <div class="img_wrap"><img src="img/lookbook2-8.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-          </li>
-        </ul>
-      </div>
-
-      <div class="con" id="con3">
-        <!-- title -->
-        <h2 class="title" id="con3_title">22SS WONDER-COOL LOOKBOOK</h2>
-        <!-- title -->
-        <ul class="imgs_wrap">
-          <li class="left">
-            <div class="img_wrap"><img src="img/lookbook3-1.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-            <div class="img_wrap"><img src="img/lookbook3-2.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-          </li>
-          <li class="center">
-            <div class="center_up">
-              <div class="img_wrap"><img src="img/lookbook3-3.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-              <div class="img_wrap"><img src="img/lookbook3-4.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-            </div>
-            <div class="video" id="video3">
-              <div class="video_wrap">
-                <button class="video_play_btn">
-                  <img src="img/video_play_btn.png" alt="play button" />
-                </button>
-              </div>
-            </div>
-            <div class="center_down">
-              <div class="img_wrap"><img src="img/lookbook3-5.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-              <div class="img_wrap"><img src="img/lookbook3-6.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-            </div>
-          </li>
-          <li class="right">
-            <div class="img_wrap"><img src="img/lookbook3-7.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-            <div class="img_wrap"><img src="img/lookbook3-8.png" alt="22SS PERFORMANCE LOOKBOOK" /></div>
-          </li>
-        </ul>
-      </div>
-    
+  <div class="wrap margin">
+    <div class="arrow_buttons">
+      <button class="prev_button">
+        <img src="img/prev_btn.png" alt="이전버튼" />
+      </button>
+      
+      <button class="next_button">
+        <img src="img/next_btn.png" alt="다음버튼" />
+      </button>
     </div>
+
+    <section class="contents">
+      <!-- content1 -->
+      <article class="con con1">
+        <!-- title -->
+        <h2 class="title">22SS PERFORMANCE LOOKBOOK</h2>
+        <!-- title -->
+        <div class="imgs_wrap clearfix">
+          <!-- left imgs -->
+          <div class="left_imgs">
+            <div class="img_wrap">
+              <img src="img/lookbook1-1.png" alt="22SS PERFORMANCE LOOKBOOK" />
+            </div>
+            <div class="img_wrap">
+              <img src="img/lookbook1-2.png" alt="22SS PERFORMANCE LOOKBOOK" />
+            </div>
+          </div>
+          <!-- left imgs -->
+          
+          <!-- center imgs -->
+          <div class="center_imgs clearfix">
+            <div class="center_up_imgs clearfix">
+              <div class="img_wrap">
+                <img src="img/lookbook1-3.png" alt="22SS PERFORMANCE LOOKBOOK" />
+              </div>
+              <div class="img_wrap">
+                <img src="img/lookbook1-4.png" alt="22SS PERFORMANCE LOOKBOOK" />
+              </div>
+            </div>
+
+            <div class="video video1">
+              <button class="video_play_btn">
+                <i class="fa-solid fa-circle-play"></i>
+              </button>
+            </div>
+
+            <div class="center_down_imgs clearfix">
+              <div class="img_wrap">
+                <img src="img/lookbook1-5.png" alt="22SS PERFORMANCE LOOKBOOK" />
+              </div>
+              <div class="img_wrap">
+                <img src="img/lookbook1-6.png" alt="22SS PERFORMANCE LOOKBOOK" />
+              </div>
+            </div>
+          </div>
+          <!-- center imgs -->
+
+          <!-- right imgs -->
+          <div class="right_imgs">
+            <div class="img_wrap">
+              <img src="img/lookbook1-7.png" alt="22SS PERFORMANCE LOOKBOOK" />
+            </div>
+            <div class="img_wrap">
+              <img src="img/lookbook1-8.png" alt="22SS PERFORMANCE LOOKBOOK" />
+            </div>
+          </div>
+          <!-- right imgs -->
+        </div>
+      </article>
+      <!-- content1 -->
+
+
+      <!-- content2 -->
+      <article class="con con2">
+        <!-- title -->
+        <h2 class="title">PRO-SPECS ORIGINAL</h2>
+        <!-- title -->
+        <div class="imgs_wrap clearfix">
+          <!-- left imgs -->
+          <div class="left_imgs">
+            <div class="img_wrap">
+              <img src="img/lookbook2-1.png" alt="PRO-SPECS ORIGINAL" />
+            </div>
+            <div class="img_wrap">
+              <img src="img/lookbook2-2.png" alt="PRO-SPECS ORIGINAL" />
+            </div>
+          </div>
+          <!-- left imgs -->
+          
+          <!-- center imgs -->
+          <div class="center_imgs clearfix">
+            <div class="center_up_imgs clearfix">
+              <div class="img_wrap">
+                <img src="img/lookbook2-3.png" alt="PRO-SPECS ORIGINAL" />
+              </div>
+              <div class="img_wrap">
+                <img src="img/lookbook2-4.png" alt="PRO-SPECS ORIGINAL" />
+              </div>
+            </div>
+
+            <div class="video video2">
+              <button class="video_play_btn">
+                <i class="fa-solid fa-circle-play"></i>
+              </button>
+            </div>
+
+            <div class="center_down_imgs clearfix">
+              <div class="img_wrap">
+                <img src="img/lookbook2-5.png" alt="PRO-SPECS ORIGINAL" />
+              </div>
+              <div class="img_wrap">
+                <img src="img/lookbook2-6.png" alt="PRO-SPECS ORIGINAL" />
+              </div>
+            </div>
+          </div>
+          <!-- center imgs -->
+
+          <!-- right imgs -->
+          <div class="right_imgs">
+            <div class="img_wrap">
+              <img src="img/lookbook2-7.png" alt="PRO-SPECS ORIGINAL" />
+            </div>
+            <div class="img_wrap">
+              <img src="img/lookbook2-8.png" alt="PRO-SPECS ORIGINAL" />
+            </div>
+          </div>
+          <!-- right imgs -->
+        </div>
+      </article>
+      <!-- content2 -->
+
+
+      <!-- content3 -->
+      <article class="con con3">
+        <!-- title -->
+        <h2 class="title">22SS WONDER-COOL LOOKBOOK</h2>
+        <!-- title -->
+        <div class="imgs_wrap clearfix">
+          <!-- left imgs -->
+          <div class="left_imgs">
+            <div class="img_wrap">
+              <img src="img/lookbook3-1.png" alt="22SS WONDER-COOL LOOKBOOK" />
+            </div>
+            <div class="img_wrap">
+              <img src="img/lookbook3-2.png" alt="22SS WONDER-COOL LOOKBOOK" />
+            </div>
+          </div>
+          <!-- left imgs -->
+          
+          <!-- center imgs -->
+          <div class="center_imgs clearfix">
+            <div class="center_up_imgs clearfix">
+              <div class="img_wrap">
+                <img src="img/lookbook3-3.png" alt="22SS WONDER-COOL LOOKBOOK" />
+              </div>
+              <div class="img_wrap">
+                <img src="img/lookbook3-4.png" alt="22SS WONDER-COOL LOOKBOOK" />
+              </div>
+            </div>
+
+            <div class="video video3">
+              <button class="video_play_btn">
+                <i class="fa-solid fa-circle-play"></i>
+              </button>
+            </div>
+
+            <div class="center_down_imgs clearfix">
+              <div class="img_wrap">
+                <img src="img/lookbook3-5.png" alt="22SS WONDER-COOL LOOKBOOK" />
+              </div>
+              <div class="img_wrap">
+                <img src="img/lookbook3-6.png" alt="22SS WONDER-COOL LOOKBOOK" />
+              </div>
+            </div>
+          </div>
+          <!-- center imgs -->
+
+          <!-- right imgs -->
+          <div class="right_imgs">
+            <div class="img_wrap">
+              <img src="img/lookbook3-7.png" alt="22SS WONDER-COOL LOOKBOOK" />
+            </div>
+            <div class="img_wrap">
+              <img src="img/lookbook3-8.png" alt="22SS WONDER-COOL LOOKBOOK" />
+            </div>
+          </div>
+          <!-- right imgs -->
+        </div>
+      </article>
+      <!-- content3 -->
+    </section>
   </div><!--wrap-->
 
   <!-- footer -->
-  <footer>
-    <div id="footer_up">
-        <ul class="clearfix">
-            <li><a href="#footer_up">개인정보처리방침</a></li>
-            <li><a href="#footer_up">고객센터</a></li>
-            <li><a href="#footer_up">A/S 안내</a></li>
-            <li><a href="#footer_up">공지사항</a></li>
-            <li><a href="#footer_up">앱다운로드</a></li>
-        </ul>
+  <footer class="footer margin">
+    <div class="footer_up">
+      <ul class="clearfix">
+        <li>
+          <a href="#footer_up">개인정보처리방침</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">고객센터</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">A/S 안내</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">공지사항</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">앱다운로드</a>
+        </li>
+      </ul>
     </div>
 
-    <div id="footer_down">
-        <ul class="clearfix">
-            <li>
-                <div class="f_title">회사소개</div>
-                <span>
-                    (주)LS네트웍스<br/>
-                    대표이사 : 문성준 | 사업자등록번호 : 622-81-04805<br/>
-                    통신판매업 신고번호 : 2016-경남김해-0229<br/>
-                    경상남도 김해시 호계로 428, 1층(부원동) </span><a>사업자정보확인</a><br/>
-                    <span>개인정보관리 책임자 : 예재승
-                </span>
-                <span>prospecsonline@lsnetworks.com</span>
-            </li>
-            <li>
-                <div class="f_title">CONTACT US</div>
-                <span>구매 / 배송 문의</span>  <a>080-710-1020</a><br/>
-                <span>상품정보 / AS문의</span>   <a>080-023-1020</a>
-                
-                <span>
-                    MON - FRI 09 : 00 - 18:00<br/>
-                    주말, 공휴일 휴무<br/>
-                    BREAK TIME : 12:30 - 13:30
-                </span>
-                <span>© LS NETWORKS CO. ALL RIGHTS RESERVED</span>
-            </li>
-            <li>
-                <div class="f_title">SGI서울보증안내</div>
-                <span>고객님께서 안전거래를 위해 현금 등으로 결제하신 경우,<br/>
-                    저희 쇼핑몰에서 가입한 소비자피해보상보험 서비스를 <br/>
-                    이용하실 수 있습니다. 
-                </span>
-                <a>서비스 가입 사실 확인</a>
-            </li> 
-        </ul>
+    <div class="footer_down">
+      <ul class="clearfix">
+        <li>
+          <h4 class="f_title">회사소개</h4>
+          <p>
+            (주)LS네트웍스<br/>
+            대표이사 : 문성준 | 사업자등록번호 : 622-81-04805<br/>
+            통신판매업 신고번호 : 2016-경남김해-0229<br/>
+            경상남도 김해시 호계로 428, 1층(부원동) 사업자정보확인<br/>
+            개인정보관리 책임자 : 예재승<br/>
+            prospecsonline@lsnetworks.com
+          </p>
+        </li>
+
+        <li>
+          <h4 class="f_title">CONTACT US</h4>
+          <p>
+            구매 / 배송 문의<br/>
+            080-710-1020<br/>
+            상품정보 / AS문의<br/>
+            080-023-1020<br/>
+            MON - FRI 09 : 00 - 18:00<br/>
+            주말, 공휴일 휴무<br/>
+            BREAK TIME : 12:30 - 13:30<br/>
+            © LS NETWORKS CO. ALL RIGHTS RESERVED
+          </p>
+        </li>
+
+        <li>
+          <h4 class="f_title">SGI서울보증안내</h4>
+          <span>
+            고객님께서 안전거래를 위해 현금 등으로 결제하신 경우,<br/>
+            저희 쇼핑몰에서 가입한 소비자피해보상보험 서비스를 <br/>
+            이용하실 수 있습니다. 
+          </span>
+          <a href="#">서비스 가입 사실 확인</a>
+        </li>
+      </ul>
     </div>
   </footer>
   <!-- footer -->

@@ -4,297 +4,385 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PROSPECS</title>
+  <title>ISSUE - PROSPECS</title>
   <link rel="stylesheet" href="css/issue.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
   <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/sub.js"></script>
+  <script src="js/issue.js"></script>
 </head>
 <body>
   <!-- header -->
-  <div id="header_wrap">
-    <header id="header">
-        <div id="logo">
+  <div class="header_wrap">
+    <header class="header margin clearfix">
+      <div class="logo">
+        <h1>
             <a href="index.html">
-                <h1><img src="img/logo.png" alt="PROSPECS"></h1>
+            <img src="img/logo.png" alt="PROSPECS" />
+          </a>
+          </h1>
+      </div>
+  
+      <nav class="nav">
+        <ul class="clearfix">
+          <li>
+            <a href="shop.html">SHOP</a>
+          </li>
+
+          <li>
+            <a href="#">EVENT</a>
+          </li>
+
+          <li class="active">
+            <a href="issue.html">ISSUE</a>
+          </li>
+
+          <li>
+            <a href="lookbook.html">LOOKBOOK</a>
+          </li>
+
+          <li>
+            <a href="sponsership.html">SPONSORSHIP</a>
+          </li>
+
+          <li>
+            <a href="#">SMART FIT</a>
+          </li>
+        </ul>
+      </nav>
+    
+      <div class="header_btns">
+        <ul class="buttons clearfix">
+          <li class="button icon">
+            <a href="#">
+              <img src="img/icon_search.png" alt="검색">
             </a>
-        </div>
+          </li>
 
-        <nav>
-            <ul>
-                <li><a href="shop.html">SHOP</a></li>
-                <li><a href="#">EVENT</a></li>
-                <li class="active"><a href="issue.html">ISSUE</a></li>
-                <li><a href="lookbook.html">LOOKBOOK</a></li>
-                <li><a href="sponsership.html">SPONSORSHIP</a></li>
-                <li><a href="#">SMART FIT</a></li>
-            </ul>
-        </nav>
+          <li class="button icon">
+            <a href="#">
+              <img src="img/icon_user.png" alt="로그인">
+            </a>
+          </li>
 
-        <div id="join">
-            <ul class="icons">
-                <li class="icon"><a href="#"><img src="img/icon_search.png" alt="Search"></a></li>
-                <li class="icon"><a href="#"><img src="img/icon_user.png" alt="User"></a></li>
-                <li class="news"><a href="#"><span>NEWS</span></a></li>
-            </ul>
-        </div>
+          <li class="button news">
+            <a href="#">
+              <span>NEWS</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
   </div>
   <!-- header -->
 
-  <div class="wrap margin issue">
+  <div class="wrap margin">
     <!-- title -->
-    <h2 id="title">ISSUE</h2>
+    <h2 class="main_title">ISSUE</h2>
     <!-- title -->
 
     <!-- section1 -->
-    <section id="section1">
-        <ul>
-            <li>
-                <div class="main_img">
-                    <a href="#"><img src="img/issue_main1.png" alt="winter_choi"></a>
-                </div>
-                <div class="content">
-                    <div class="text_box"><a href="#section1">
-                        <span>COLLABORATION</span>
-                        <h3 class="title">
-                            PRO-SPECS × <BR/>
-                            WINTER CHOI
-                        </h3>
-                        <p>
-                            프로-스펙스 오리지널과 최겨울이 함께한 이번 협업은 평소 농구화에 관심이 많았던 최겨울이 스트릿 감성의 패션성과 합리적인 가격의 농구화를 직접 만들고자 기획부터 디자인, 화보 촬영까지 1년간 공을 들여 완성했다.
-                        </p>
-                        <p>
-                            최겨울만의 유니크한 감각을 녹여낸 이번 농구화는 총 2개 스타일로 출시됐다. 농구화의 기본적인 기능성을 갖추면서도 데님이나 와이드 팬츠, 트레이닝 등 일상 패션에도 캐주얼하게 스타일링이 가능한 것이 특징이다.
-                        </p>
-                    </a></div>
-                    <div class="imgs_wrap">
-                        <div class="img"><a href="#"><img src="img/issue_main2.png" alt="winter_choi"></a></div>
-                        <div class="img"><a href="#"><img src="img/issue_main3.png" alt="winter_choi"></a></div>
-                    </div>
-                </div>
-            </li>
-        </ul>
+    <section class="section1">
+      <a href="#" class="clearfix">
+        <div class="main_img">
+          <img src="img/issue_main1.png" alt="winter choi" />
+        </div>
+
+        <div class="content">
+          <div class="text_box">
+            <span>COLLABORATION</span>
+            <h3 class="title">
+                PRO-SPECS &#215; <BR/>
+                WINTER CHOI
+            </h3>
+            <p>
+                프로-스펙스 오리지널과 최겨울이 함께한 이번 협업은 평소 농구화에 관심이 많았던 최겨울이 스트릿 감성의 패션성과 합리적인 가격의 농구화를 직접 만들고자 기획부터 디자인, 화보 촬영까지 1년간 공을 들여 완성했다.
+            </p>
+            <p>
+                최겨울만의 유니크한 감각을 녹여낸 이번 농구화는 총 2개 스타일로 출시됐다. 농구화의 기본적인 기능성을 갖추면서도 데님이나 와이드 팬츠, 트레이닝 등 일상 패션에도 캐주얼하게 스타일링이 가능한 것이 특징이다.
+            </p>
+          </div>
+
+          <div class="sub_imgs clearfix">
+            <div class="sub_img sub_img1">
+              <img src="img/issue_main2.png" alt="winter choi" />
+            </div>
+
+            <div class="sub_img sub_img1">
+              <img src="img/issue_main3.png" alt="winter choi" />
+            </div>
+          </div>
+        </div>
+      </a>
     </section>
     <!-- section1 -->
 
     <!-- section2 -->
-    <section id="section2">
-        <div class="con" id="con1">
-            <a href="#section2">
-                <div class="img_wrap">
-                    <img src="img/issue1.png" alt="winter_choi">
-                </div>
-                <div class="text_box">
-                    <span>COLLABORATION</span>
-                    <h3 class="title">프로-스펙스 X 최겨울</h3>
-                    <p>최겨울은 대한민국 남성들의 패션 바이블로 불리는 인기 인플루언서로 50만 명의 구독자를 보유한 패션 유튜브 크리에이터.
-                        스타일가이드이자 패션유튜브 크리에이터 최겨울은 패션커뮤니티를 운영하며, 그만의 패션감각으로 구독자들과 커뮤니티 회원들의 스타일을 평하고 조언을 해주기도 한다. 최겨울의 콘텐츠들의 반 이상은 모두 실용성, 가성비 그리고 멋 이 모두를 따져서 제품을 구입하거나, 스타일링 하는 영상을 많이 보여준다. 탁월한 패션센스와 입담으로 동네오빠, 동네 형같은 친근함으로 회원들과 소통하며 인기를 끌고있다.</p><p class="dot">...</p>
-                </div>
-            </a>
-        </div>
+    <section class="section2 clearfix">
+      <article class="con con1">
+        <a href="#">
+          <div class="img_wrap">
+            <img src="img/issue1.png" alt="winter choi">
+          </div>
+          
+          <div class="text_box">
+            <span>COLLABORATION</span>
+            <h3 class="title">프로-스펙스 X 최겨울</h3>
+            <p>
+              최겨울은 대한민국 남성들의 패션 바이블로 불리는 인기 인플루언서로 50만 명의 구독자를 보유한 패션 유튜브 크리에이터. 스타일가이드이자 패션유튜브 크리에이터 최겨울은 패션커뮤니티를 운영하며, 그만의 패션감각으로 구독자들과 커뮤니티 회원들의 스타일을 평하고 조언을 해주기도 한다. 최겨울의 콘텐츠들의 반 이상은 모두 실용성,
+            </p>
+            <span class="dot">...</span>
+          </div>
+        </a>
+      </article>
 
-        <div class="con" id="con2">
-            <a href="#section2">
-                <div class="img_wrap">
-                    <img src="img/issue2.png" alt="goodnation">
-                </div>
-                <div class="text_box">
-                    <span>NEW SHOES ROOM</span>
-                    <h3 class="title">프로-스펙스 X 굿네이션 2nd</h3>
-                    <p>
-                        특유의 풍자적 요소로 사랑받아온 도메스틱 스트릿 브랜드 '크리틱'의 디렉터 이대웅이 이끄는 디자인 에이전시
-그래픽 디자인과 브랜드 컨설팅, 패션디자인에 특화된 에이전시로 패션분야 전반에 걸쳐 다양하고 확실한 결과물을 만들어 내고 있다.
-                    </p><p class="dot">...</p>
-                </div>
-            </a>
-        </div>
+      <article class="con con2">
+        <a href="#">
+          <div class="img_wrap">
+            <img src="img/issue2.png" alt="goodnation" />
+          </div>
 
-        <div class="con" id="con3">
-            <a href="#section2">
-                <div class="img_wrap">
-                    <img src="img/issue3.png" alt="volt run">
-                </div>
-                <div class="text_box">
-                    <span>NEW SHOES ROOM</span>
-                    <h3 class="title">2022 온라인 단독기획 볼트런2</h3>
-                    <p>레트로 매력에 빠진 볼트런2 신발에 대한 진심을 담아 소재, 디자인, 칼라 그리고 다양한 일상 속을 그리며 섬세하게 준비했습니다. 통기성이 우수한 메쉬 소재를 사용하여 다양한 활동에도 상쾌한 착화감을 느끼실 수 있으며,</p><p class="dot">...</p>
-                </div>
-            </a>
-        </div>
+          <div class="text_box">
+            <span>NEW SHOES ROOM</span>
+            <h3 class="title">프로-스펙스 X 굿네이션 2nd</h3>
+            <p>
+              특유의 풍자적 요소로 사랑받아온 도메스틱 스트릿 브랜드 '크리틱'의 디렉터 이대웅이 이끄는 디자인 에이전시 그래픽 디자인과 브랜드 컨설팅, 패션디자인에 특화된 에이전시로 패션분야 전반에 걸쳐 다양하고 확실한 결과물을 만들어 내고 있다.
+            </p>
+            <span class="dot">...</span>
+          </div>
+        </a>
+      </article>
 
-        <div class="con" id="con4">
-            <a href="#con4">
-                <div class="img_wrap">
-                    <img src="img/issue4.png" alt="vibrate">
-                </div>
-                <div class="text_box">
-                    <span>COLLABORATION</span>
-                    <h3 class="title">프로-스펙스 X 바이브레이트 1st</h3>
-                    <p>19 F/W 바이브레이트와 프로-스펙스 콜라보레이션은 테크웨어 스타일의 의류와 빅로고플레이, 네온컬러, 글로시한 소재등을 사용한 미래지향적 느낌의 신발과 의류, 모자들로 개성을 강하게 표출하고 싶어하는 밀레니얼 세대를 겨냥한 제품들을 많이 선보였다.</p><p class="dot">...</p>
-                </div>
-            </a>
-        </div>
+      <article class="con con3">
+        <a href="#">
+          <div class="img_wrap">
+              <img src="img/issue3.png" alt="volt run" />
+          </div>
 
-        <div class="con" id="con5">
-            <a href="#con4">
-                <div class="img_wrap">
-                    <img src="img/issue5.png" alt="thence">
-                </div>
-                <div class="text_box">
-                    <span>COLLABORATION</span>
-                    <h3 class="title">프로-스펙스 X 덴스</h3>
-                    <p>프로-스펙스 오리지널의 스포티한 무드와 덴스의 힙한 하이틴 감성의 조화가 돋보이는 컬래버레이션. 1988년 서울 올림픽에서 영감을 얻었으며, 그시절의 향수를 불러일으키는 레트로한 컬러웨이와 그래픽을 제품 곳곳에 담았다.</p><p class="dot">...</p>
-                </div>
-            </a>
-        </div>
+          <div class="text_box">
+            <span>NEW SHOES ROOM</span>
+            <h3 class="title">2022 온라인 단독기획 볼트런2</h3>
+            <p>
+              레트로 매력에 빠진 볼트런2 신발에 대한 진심을 담아 소재, 디자인, 칼라 그리고 다양한 일상 속을 그리며 섬세하게 준비했습니다. 통기성이 우수한 메쉬 소재를 사용하여 다양한 활동에도 상쾌한 착화감을 느끼실 수 있으며,
+            </p>
+            <span class="dot">...</span>
+          </div>
+        </a>
+      </article>
 
-        <div class="con" id="con6">
-            <a href="#con4">
-                <div class="img_wrap">
-                    <img src="img/issue6.png" alt="nohant">
-                </div>
-                <div class="text_box">
-                    <span>NEW SHOES ROOM</span>
-                    <h3 class="title">
-                        프로-스펙스 X 노앙 2nd</h3>
-                    <p>디자이너 남노아의 유니섹스 컨템포러리 브랜드.
-                        변화하는 라이프스타일에 맞춰 ‘브런치 룩(Brunch Look)’이라는 콘셉트로 누구나 편안하고 스타일리시하게 입을 수 있는 옷을 만들고자 론칭했다. 클래식에 기반을 둔 모던하고 심플한 스타일을 추구하며 메인 타깃인 25~35세 남성과 여성 모두가 만족할 수 있는 실루엣을 제안하고 있다.</p><p class="dot">...</p>
-                </div>
-            </a>
-        </div>
+      <article class="con con4">
+        <a href="#">
+          <div class="img_wrap">
+              <img src="img/issue4.png" alt="vibrate" />
+          </div>
+
+          <div class="text_box">
+            <span>COLLABORATION</span>
+            <h3 class="title">프로-스펙스 X 바이브레이트 1st</h3>
+            <p>
+              19 F/W 바이브레이트와 프로-스펙스 콜라보레이션은 테크웨어 스타일의 의류와 빅로고플레이, 네온컬러, 글로시한 소재등을 사용한 미래지향적 느낌의 신발과 의류, 모자들로 개성을 강하게 표출하고 싶어하는 밀레니얼 세대를 겨냥한 제품들을 많이 선보였다.
+            </p>
+            <span class="dot">...</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="con con5">
+        <a href="#">
+          <div class="img_wrap">
+            <img src="img/issue5.png" alt="thence" />
+          </div>
+
+          <div class="text_box">
+            <span>COLLABORATION</span>
+            <h3 class="title">프로-스펙스 X 덴스</h3>
+            <p>
+              프로-스펙스 오리지널의 스포티한 무드와 덴스의 힙한 하이틴 감성의 조화가 돋보이는 컬래버레이션. 1988년 서울 올림픽에서 영감을 얻었으며, 그시절의 향수를 불러일으키는 레트로한 컬러웨이와 그래픽을 제품 곳곳에 담았다.
+            </p>
+            <span class="dot">...</span>
+          </div>
+        </a>
+      </article>
+
+      <article class="con con6">
+        <a href="#">
+          <div class="img_wrap">
+            <img src="img/issue6.png" alt="nohant" />
+          </div>
+
+          <div class="text_box">
+            <span>NEW SHOES ROOM</span>
+            <h3 class="title">프로-스펙스 X 노앙 2nd</h3>
+            <p>
+              디자이너 남노아의 유니섹스 컨템포러리 브랜드. 변화하는 라이프스타일에 맞춰 ‘브런치 룩(Brunch Look)’이라는 콘셉트로 누구나 편안하고 스타일리시하게 입을 수 있는 옷을 만들고자 론칭했다. 클래식에 기반을 둔 모던하고 심플한 스타일을 추구하며 메인 타깃인 25~35세 남성과 여성 모두가 만족할 수 있는 실루엣을 제안하고 있다.
+            </p>
+            <span class="dot">...</span>
+          </div>
+        </a>
+      </article>
     </section>
     <!-- section2 -->
 
     <!-- section3 -->
-    <section id="section3">
-        <div class="con" id="con7">
-            <a href="#con7">
-                <div class="img_wrap">
-                    <img src="img/issue7.png" alt="nohant">
-                </div>
-                <div class="text_box">
-                    <span>COLLABORATION</span>
-                    <h3 class="title">
-                        프로-스펙스 X 노앙 1st</h3>
-                    <p>디자이너 남노아의 유니섹스 컨템포러리 브랜드.
-                        변화하는 라이프스타일에 맞춰 ‘브런치 룩(Brunch Look)’이라는 콘셉트로 누구나 편안하고 스타일리시하게 입을 수 있는 옷을 만들고자 론칭했다. 클래식에 기반을 둔 모던하고 심플한 스타일을 추구하며 메인 타깃인 25~35세 남성과 여성 모두가 만족할 수 있는 실루엣을 제안하고 있다.</p><p class="dot">...</p>
-                </div>
-            </a>
-        </div>
+    <section class="section3 clearfix">
+      <article class="con con7">
+        <a href="#">
+          <div class="img_wrap">
+            <img src="img/issue7.png" alt="nohant" />
+          </div>
 
-        <div class="con" id="con8">
-            <a href="#con7">
-                <div class="img_wrap">
-                    <img src="img/issue8.png" alt="vibrate">
-                </div>
-                <div class="text_box">
-                    <span>NEW SHOES ROOM</span>
-                    <h3 class="title">프로-스펙스 X 바이브레이트 2nd
-                    </h3>
-                    <p>20 S/S 바이브레이트와 프로-스펙스 콜라보레이션은 타이다이 나염의 티셔츠와 힙한 그래픽자수가 돋보이는 후디, 재귀반사 기능의 구조적인 스니커즈, 귀여운 스마일패치가 달려있는 슬라이드, 스트랩샌들 등 유니크하고 트렌디한 아이템들을 선보였다.</p><p class="dot">...</p>
-                </div>
-            </a>
-        </div>
+          <div class="text_box">
+            <span>COLLABORATION</span>
+            <h3 class="title">프로-스펙스 X 노앙 1st</h3>
+            <p>
+              디자이너 남노아의 유니섹스 컨템포러리 브랜드. 변화하는 라이프스타일에 맞춰 ‘브런치 룩(Brunch Look)’이라는 콘셉트로 누구나 편안하고 스타일리시하게 입을 수 있는 옷을 만들고자 론칭했다. 클래식에 기반을 둔 모던하고 심플한 스타일을 추구하며 메인 타깃인 25~35세 남성과 여성 모두가 만족할 수 있는 실루엣을 제안하고 있다.
+            </p>
+            <span class="dot">...</span>
+          </div>
+        </a>
+      </article>
 
-        <div class="con" id="con9">
-            <a href="#con7">
-                <div class="img_wrap">
-                    <img src="img/issue9.png" alt="nohant">
-                </div>
-                <div class="text_box">
-                    <span>COLLABORATION</span>
-                    <h3 class="title">프로-스펙스 X 노앙 3rd</h3>
-                    <p>19 F/W 컬렉션은 프로스펙스 오리지널의 'F'심볼과 노앙의 시그니처 로고 중 하나인 'made in ㅅEOUL' 이 조합된 아플리케 로고를 활용한 다양한 컬러의 맨투맨과 후디, 활용도가 좋은 리버서블 집업베스트, 더플코트,루즈핏의 면팬츠등의 의류 아이템과 컬러블록 스니커, 벨크로스니커등을 선보였다.</p><p class="dot">...</p>
-                </div>
-            </a>
-        </div>
+      <article class="con con8">
+        <a href="#">
+          <div class="img_wrap">
+            <img src="img/issue8.png" alt="vibrate" />
+          </div>
 
-        <div class="con" id="con10">
-            <a href="#con10">
-                <div class="img_wrap">
-                    <img src="img/issue10.png" alt="goodnation">
-                </div>
-                <div class="text_box">
-                    <span>NEW SHOES ROOM</span>
-                    <h3 class="title">프로-스펙스 X 굿네이션 1st</h3>
-                    <p>프로-스펙스 오리지널과 굿네이션이 함께 완성한 20 S/S 컬렉션은 1981년부터 이어져 온 프로-스펙스의 오리지널리티는 살리면서 굿네이션의 트렌디한 감각을 더해 완성했다. 굿네이션의 디자인 센스를 더한 20 S/S 시즌의 프로-스펙스 오리지널은 완전히 새로운 모습이다. 1988년 서울 올림픽을 공식 후원하던 때의 영광을 기억하며 태극기와 프로-스펙스 오리지널의 로고를 활용해 레트로 무드의 스트리트 룩을 제안한다.</p><p class="dot">...</p>
-                </div>
-            </a>
-        </div>
+          <div class="text_box">
+            <span>NEW SHOES ROOM</span>
+            <h3 class="title">프로-스펙스 X 바이브레이트 2nd
+            </h3>
+            <p>
+              20 S/S 바이브레이트와 프로-스펙스 콜라보레이션은 타이다이 나염의 티셔츠와 힙한 그래픽자수가 돋보이는 후디, 재귀반사 기능의 구조적인 스니커즈, 귀여운 스마일패치가 달려있는 슬라이드, 스트랩샌들 등 유니크하고 트렌디한 아이템들을 선보였다.
+            </p>
+            <span class="dot">...</span>
+          </div>
+        </a>
+      </article>
 
-        <div class="con" id="con11">
-            <a href="#con10">
-                <div class="img_wrap">
-                    <img src="img/issue11.png" alt="rawrow">
-                </div>
-                <div class="text_box">
-                    <span>NEW SHOES ROOM</span>
-                    <h3 class="title">프로-스펙스 X 로우로우</h3>
-                    <p>20 S/S 로우로우와 프로-스펙스 콜라보레이션은 본질에 충실한 미니멀한 디자인의 백팩과 크로스백,헤링본패턴 아웃솔의 프로스펙스의 오리지널리티를 살린 마라톤화를 복각한 스니커즈, 비브람솔과 천연가죽소재의 레이저 펀칭 스니커즈, 톤온톤의 세련된 무드를 더한 스니커즈, 등을 선보였다.</p><p class="dot">...</p>
-                </div>
-            </a>
+      <article class="con con9">
+        <a href="#">
+          <div class="img_wrap">
+            <img src="img/issue9.png" alt="nohant" />
+          </div>
+
+          <div class="text_box">
+            <span>COLLABORATION</span>
+            <h3 class="title">프로-스펙스 X 노앙 3rd</h3>
+            <p>
+              19 F/W 컬렉션은 프로스펙스 오리지널의 'F'심볼과 노앙의 시그니처 로고 중 하나인 'made in ㅅEOUL' 이 조합된 아플리케 로고를 활용한 다양한 컬러의 맨투맨과 후디, 활용도가 좋은 리버서블 집업베스트, 더플코트,루즈핏의 면팬츠등의 의류 아이템과 컬러블록 스니커, 벨크로스니커등을 선보였다.
+            </p>
+            <span class="dot">...</span>
+          </div>
+        </a>
+      </article>
+
+        <article class="con con10">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/issue10.png" alt="goodnation" />
+            </div>
+
+            <div class="text_box">
+              <span>NEW SHOES ROOM</span>
+              <h3 class="title">프로-스펙스 X 굿네이션 1st</h3>
+              <p>
+                프로-스펙스 오리지널과 굿네이션이 함께 완성한 20 S/S 컬렉션은 1981년부터 이어져 온 프로-스펙스의 오리지널리티는 살리면서 굿네이션의 트렌디한 감각을 더해 완성했다. 굿네이션의 디자인 센스를 더한 20 S/S 시즌의 프로-스펙스 오리지널은 완전히 새로운 모습이다.
+              </p>
+              <span class="dot">...</sp>
+            </div>
+          </a>
+        </article>
+
+        <div class="con con11">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/issue11.png" alt="rawrow" />
+            </div>
+
+            <div class="text_box">
+              <span>NEW SHOES ROOM</span>
+              <h3 class="title">프로-스펙스 X 로우로우</h3>
+              <p>
+                20 S/S 로우로우와 프로-스펙스 콜라보레이션은 본질에 충실한 미니멀한 디자인의 백팩과 크로스백,헤링본패턴 아웃솔의 프로스펙스의 오리지널리티를 살린 마라톤화를 복각한 스니커즈, 비브람솔과 천연가죽소재의 레이저 펀칭 스니커즈, 톤온톤의 세련된 무드를 더한 스니커즈, 등을 선보였다.
+              </p>
+              <span class="dot">...</span>
+            </div>
+          </a>
         </div>
     </section>
     <!-- section3 -->
 
-    <div class="issue_more_button">
-        <button>VIEW MORE</button>
-    </div>
-
+    <button class="more_button">VIEW MORE</button>
   </div>
 
   <!-- footer -->
-  <footer>
-    <div id="footer_up">
-        <ul class="clearfix">
-            <li><a href="#footer_up">개인정보처리방침</a></li>
-            <li><a href="#footer_up">고객센터</a></li>
-            <li><a href="#footer_up">A/S 안내</a></li>
-            <li><a href="#footer_up">공지사항</a></li>
-            <li><a href="#footer_up">앱다운로드</a></li>
-        </ul>
+  <footer class="footer margin">
+    <div class="footer_up">
+      <ul class="clearfix">
+        <li>
+          <a href="#footer_up">개인정보처리방침</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">고객센터</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">A/S 안내</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">공지사항</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">앱다운로드</a>
+        </li>
+      </ul>
     </div>
 
-    <div id="footer_down">
-        <ul class="clearfix">
-            <li>
-                <div class="f_title">회사소개</div>
-                <span>
-                    (주)LS네트웍스<br/>
-                    대표이사 : 문성준 | 사업자등록번호 : 622-81-04805<br/>
-                    통신판매업 신고번호 : 2016-경남김해-0229<br/>
-                    경상남도 김해시 호계로 428, 1층(부원동) </span><a>사업자정보확인</a><br/>
-                    <span>개인정보관리 책임자 : 예재승
-                </span>
-                <span>prospecsonline@lsnetworks.com</span>
-            </li>
-            <li>
-                <div class="f_title">CONTACT US</div>
-                <span>구매 / 배송 문의</span>  <a>080-710-1020</a><br/>
-                <span>상품정보 / AS문의</span>   <a>080-023-1020</a>
-                
-                <span>
-                    MON - FRI 09 : 00 - 18:00<br/>
-                    주말, 공휴일 휴무<br/>
-                    BREAK TIME : 12:30 - 13:30
-                </span>
-                <span>© LS NETWORKS CO. ALL RIGHTS RESERVED</span>
-            </li>
-            <li>
-                <div class="f_title">SGI서울보증안내</div>
-                <span>고객님께서 안전거래를 위해 현금 등으로 결제하신 경우,<br/>
-                    저희 쇼핑몰에서 가입한 소비자피해보상보험 서비스를 <br/>
-                    이용하실 수 있습니다. 
-                </span>
-                <a>서비스 가입 사실 확인</a>
-            </li> 
-        </ul>
+    <div class="footer_down">
+      <ul class="clearfix">
+        <li>
+          <h4 class="f_title">회사소개</h4>
+          <p>
+            (주)LS네트웍스<br/>
+            대표이사 : 문성준 | 사업자등록번호 : 622-81-04805<br/>
+            통신판매업 신고번호 : 2016-경남김해-0229<br/>
+            경상남도 김해시 호계로 428, 1층(부원동) 사업자정보확인<br/>
+            개인정보관리 책임자 : 예재승<br/>
+            prospecsonline@lsnetworks.com
+          </p>
+        </li>
+
+        <li>
+          <h4 class="f_title">CONTACT US</h4>
+          <p>
+            구매 / 배송 문의<br/>
+            080-710-1020<br/>
+            상품정보 / AS문의<br/>
+            080-023-1020<br/>
+            MON - FRI 09 : 00 - 18:00<br/>
+            주말, 공휴일 휴무<br/>
+            BREAK TIME : 12:30 - 13:30<br/>
+            © LS NETWORKS CO. ALL RIGHTS RESERVED
+          </p>
+        </li>
+
+        <li>
+          <h4 class="f_title">SGI서울보증안내</h4>
+          <span>
+            고객님께서 안전거래를 위해 현금 등으로 결제하신 경우,<br/>
+            저희 쇼핑몰에서 가입한 소비자피해보상보험 서비스를 <br/>
+            이용하실 수 있습니다. 
+          </span>
+          <a href="#">서비스 가입 사실 확인</a>
+        </li>
+      </ul>
     </div>
   </footer>
   <!-- footer -->
-  
 </body>
 </html>

@@ -4,181 +4,296 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PROSPECS</title>
-  <link rel="stylesheet" href="css/product.css" />
+  <title>런더 101 : SHOP - PROSPECS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/product.css" />
   <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/sub.js"></script>
+  <script src="js/product.js"></script>
 </head>
 <body>
   <!-- header -->
-  <div id="header_wrap">
-    <header id="header">
-        <div id="logo">
+  <div class="header_wrap">
+    <header class="header margin clearfix">
+      <div class="logo">
+        <h1>
             <a href="index.html">
-                <h1><img src="img/logo.png" alt="PROSPECS"></h1>
+            <img src="img/logo.png" alt="PROSPECS" />
+          </a>
+          </h1>
+      </div>
+  
+      <nav class="nav">
+        <ul class="clearfix">
+          <li class="active">
+            <a href="shop.html">SHOP</a>
+          </li>
+
+          <li>
+            <a href="#">EVENT</a>
+          </li>
+
+          <li>
+            <a href="issue.html">ISSUE</a>
+          </li>
+
+          <li>
+            <a href="lookbook.html">LOOKBOOK</a>
+          </li>
+
+          <li>
+            <a href="sponsership.html">SPONSORSHIP</a>
+          </li>
+
+          <li>
+            <a href="#">SMART FIT</a>
+          </li>
+        </ul>
+      </nav>
+    
+      <div class="header_btns">
+        <ul class="buttons clearfix">
+          <li class="button icon">
+            <a href="#">
+              <img src="img/icon_search.png" alt="검색">
             </a>
-        </div>
+          </li>
 
-        <nav>
-            <ul>
-                <li class="active"><a href="shop.html">SHOP</a></li>
-                <li><a href="#">EVENT</a></li>
-                <li><a href="issue.html">ISSUE</a></li>
-                <li><a href="lookbook.html">LOOKBOOK</a></li>
-                <li><a href="sponsership.html">SPONSORSHIP</a></li>
-                <li><a href="#">SMART FIT</a></li>
-            </ul>
-        </nav>
+          <li class="button icon">
+            <a href="#">
+              <img src="img/icon_user.png" alt="로그인">
+            </a>
+          </li>
 
-        <div id="join">
-            <ul class="icons">
-                <li class="icon"><a href="#"><img src="img/icon_search.png" alt="Search"></a></li>
-                <li class="icon"><a href="#"><img src="img/icon_user.png" alt="User"></a></li>
-                <li class="news"><a href="#"><span>NEWS</span></a></li>
-            </ul>
-        </div>
+          <li class="button news">
+            <a href="#">
+              <span>NEWS</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
   </div>
   <!-- header -->
 
-  <div class="margin product">
-    <section id="section1">
-      <div class="left">
+  <div class="margin wrap">
+    <main class="main clearfix">
+      <div class="left clearfix">
+        <!-- color_select -->
         <div class="color_select">
           <h2 class="title">COLOR</h2>
           <ul>
-            <li class="active"><button><img src="img/product_color1.png" alt="color"></button></li>
-            <li><button><img src="img/product_color2.png" alt="color"></button></li>
-            <li><button><img src="img/product_color3.png" alt="color"></button></li>
-            <li><button><img src="img/product_color4.png" alt="color"></button></li>
+            <li class="active">
+              <button>
+                <img src="img/product_color1.png" alt="color">
+              </button>
+            </li>
+
+            <li>
+              <button>
+                <img src="img/product_color2.png" alt="color">
+              </button>
+            </li>
+            
+            <li>
+              <button>
+                <img src="img/product_color3.png" alt="color">
+              </button>
+            </li>
+            
+            <li>
+              <button>
+                <img src="img/product_color4.png" alt="color">
+              </button>
+            </li>
           </ul>
         </div>
+        <!-- color_select -->
 
+        <!-- main_img -->
         <div class="main_img_wrap">
-          <img src="img/product_main.png" alt="">
+          <img src="img/product_main.png" alt="에너젯 112">
         </div>
+        <!-- main_img -->
       </div>
 
+
       <div class="right">
+        <!-- text_box -->
         <div class="text_box">
           <p>[아울렛 특가]</p>
-          <h2>런더 101</h2>
+          <h2>에너젯 112</h2>
           <span class="normal_price">89,000원</span>
           <span class="discount_price">25,800원</span>
           <span class="discount_rate">71%</span>
         </div>
+        <!-- text_box -->
 
-        <div class="icons">
-          <div class="icon"><button><img src="img/heart_icon.png" alt=""></button></div>
-          <div class="icon"><button><img src="img/share_icon.png" alt=""></button></div>
+        <!-- icons -->
+        <div class="icons clearfix">
+          <button class="icon"><img src="img/heart_icon.png" alt="하트"></button>
+          <button class="icon"><img src="img/share_icon.png" alt="공유"></button>
         </div>
+        <!-- icons -->
 
+        <!-- size_select -->
         <div class="size_select">
           <h2 class="title">SIZE</h2>
-          <ul>
-            <li class="active"><button>230</button></li>
-            <li><button>240</button></li>
-            <li><button>250</button></li>
-            <li><button>260</button></li>
-            <li><button>270</button></li>
-            <li><button>280</button></li>
+          <ul class="clearfix">
+            <li class="active">
+              <button>230</button>
+            </li>
+
+            <li>
+              <button>240</button>
+            </li>
+
+            <li>
+              <button>250</button>
+            </li>
+
+            <li>
+              <button>260</button>
+            </li>
+
+            <li>
+              <button>270</button>
+            </li>
+
+            <li>
+              <button>280</button>
+            </li>
           </ul>
         </div>
+        <!-- size_select -->
 
-        <div class="buy_btns">
-          <div class="buy_btn"><button>구매하기</button></div>
-          <div class="buy_btn"><button>장바구니</button></div>
+        <!-- buy_btns -->
+        <div class="buy_btns clearfix">
+          <button class="buy_btn">구매하기</button>
+          <button class="buy_btn">장바구니</button>
+        </div>
+        <!-- buy_btns -->
+      </div>
+    </main>
+
+    <nav class="sub_nav">
+      <ul class="clearfix">
+        <li class="active">상품정보</li>
+        <li>리뷰</li>
+        <li>배송</li>
+      </ul>
+    </nav>
+
+    <section class="section1 clearfix">
+      <div class="left">
+        <div class="img_wrap">
+          <img src="img/product_con1.png" alt="에너젯 112" />
+        </div>
+      </div>
+
+      <div class="right">
+        <h3>에너젯 112</h3>
+        <div class="img_wrap">
+          <img src="img/product_con2.png" alt="에너젯 112" />
+        </div>
+        <p>뒤측 흔들림을 잡아줄 수 있는<br/>힐 서포트 패턴 적용</p>
+      </div>
+    </section>
+
+    <section class="section2 clearfix">
+      <div class="left">
+        <div class="img_wrap">
+          <img src="img/product_con3.png" alt="에너젯 112" />
+        </div>
+        <p>
+          원더바운서 소재 적용하여<br/>
+          지면으로부터의 '충격 흡수' 가능
+        </p>
+      </div>
+
+      <div class="right">
+        <div class="img_wrap">
+          <img src="img/product_con4.png" alt="에너젯 112" />
         </div>
       </div>
     </section>
 
-    <section id="section2">
-      <div class="title">
-        <ul>
-          <li class="active">상품정보</li>
-          <li>리뷰</li>
-          <li>배송</li>
-        </ul>
+    <section class="section3">
+      <div class="img_wrap">
+        <img src="img/product_con5.png" alt="에너젯 112" />
       </div>
-
-      <article class="article1">
-        <div class="left">
-          <div class="img_wrap"><img src="img/product_con1.png" alt="에너젯 112"></div>
-        </div>
-        <div class="right">
-          <h4>에너젯 112</h4>
-          <div class="img_wrap"><img src="img/product_con2.png" alt="에너젯 112"></div>
-          <p>뒤측 흔들림을 잡아줄 수 있는<br/>힐 서포트 패턴 적용</p>
-        </div>
-      </article>
-
-      <article class="article2">
-        <div class="left">
-          <div class="img_wrap"><img src="img/product_con3.png" alt="에너젯 112"></div>
-          <p>원더바운서 소재 적용하여<br/>지면으로부터의 '충격 흡수' 가능</p>
-        </div>
-        <div class="right">
-          <div class="img_wrap"><img src="img/product_con4.png" alt="에너젯 112"></div>
-        </div>
-      </article>
-
-      <article class="article3">
-        <div class="img_wrap"><img src="img/product_con5.png" alt="에너젯 112"></div>
-        <p>에어리테크 접목하여 통기성이 강조된 '컴포트 러닝화'<br/>
-          통기성이 우수하여 여름 운동화로도 추천</p>
-      </article>
+      <p>
+        에어리테크 접목하여 통기성이 강조된 '컴포트 러닝화'<br/>
+        통기성이 우수하여 여름 운동화로도 추천
+      </p>
     </section>
-  </div>
+  </div><!-- wrap -->
 
   <!-- footer -->
-  <footer>
-    <div id="footer_up">
-        <ul class="clearfix">
-            <li><a href="#footer_up">개인정보처리방침</a></li>
-            <li><a href="#footer_up">고객센터</a></li>
-            <li><a href="#footer_up">A/S 안내</a></li>
-            <li><a href="#footer_up">공지사항</a></li>
-            <li><a href="#footer_up">앱다운로드</a></li>
-        </ul>
+  <footer class="footer margin">
+    <div class="footer_up">
+      <ul class="clearfix">
+        <li>
+          <a href="#footer_up">개인정보처리방침</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">고객센터</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">A/S 안내</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">공지사항</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">앱다운로드</a>
+        </li>
+      </ul>
     </div>
 
-    <div id="footer_down">
-        <ul class="clearfix">
-            <li>
-                <div class="f_title">회사소개</div>
-                <span>
-                    (주)LS네트웍스<br/>
-                    대표이사 : 문성준 | 사업자등록번호 : 622-81-04805<br/>
-                    통신판매업 신고번호 : 2016-경남김해-0229<br/>
-                    경상남도 김해시 호계로 428, 1층(부원동) </span><a>사업자정보확인</a><br/>
-                    <span>개인정보관리 책임자 : 예재승
-                </span>
-                <span>prospecsonline@lsnetworks.com</span>
-            </li>
-            <li>
-                <div class="f_title">CONTACT US</div>
-                <span>구매 / 배송 문의</span>  <a>080-710-1020</a><br/>
-                <span>상품정보 / AS문의</span>   <a>080-023-1020</a>
-                
-                <span>
-                    MON - FRI 09 : 00 - 18:00<br/>
-                    주말, 공휴일 휴무<br/>
-                    BREAK TIME : 12:30 - 13:30
-                </span>
-                <span>© LS NETWORKS CO. ALL RIGHTS RESERVED</span>
-            </li>
-            <li>
-                <div class="f_title">SGI서울보증안내</div>
-                <span>고객님께서 안전거래를 위해 현금 등으로 결제하신 경우,<br/>
-                    저희 쇼핑몰에서 가입한 소비자피해보상보험 서비스를 <br/>
-                    이용하실 수 있습니다. 
-                </span>
-                <a>서비스 가입 사실 확인</a>
-            </li> 
-        </ul>
+    <div class="footer_down">
+      <ul class="clearfix">
+        <li>
+          <h4 class="f_title">회사소개</h4>
+          <p>
+            (주)LS네트웍스<br/>
+            대표이사 : 문성준 | 사업자등록번호 : 622-81-04805<br/>
+            통신판매업 신고번호 : 2016-경남김해-0229<br/>
+            경상남도 김해시 호계로 428, 1층(부원동) 사업자정보확인<br/>
+            개인정보관리 책임자 : 예재승<br/>
+            prospecsonline@lsnetworks.com
+          </p>
+        </li>
+
+        <li>
+          <h4 class="f_title">CONTACT US</h4>
+          <p>
+            구매 / 배송 문의<br/>
+            080-710-1020<br/>
+            상품정보 / AS문의<br/>
+            080-023-1020<br/>
+            MON - FRI 09 : 00 - 18:00<br/>
+            주말, 공휴일 휴무<br/>
+            BREAK TIME : 12:30 - 13:30<br/>
+            © LS NETWORKS CO. ALL RIGHTS RESERVED
+          </p>
+        </li>
+
+        <li>
+          <h4 class="f_title">SGI서울보증안내</h4>
+          <span>
+            고객님께서 안전거래를 위해 현금 등으로 결제하신 경우,<br/>
+            저희 쇼핑몰에서 가입한 소비자피해보상보험 서비스를 <br/>
+            이용하실 수 있습니다. 
+          </span>
+          <a href="#">서비스 가입 사실 확인</a>
+        </li>
+      </ul>
     </div>
   </footer>
   <!-- footer -->

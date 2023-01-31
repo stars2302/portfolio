@@ -4,782 +4,978 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PROSPECS</title>
-  <link rel="stylesheet" href="css/shop.css" />
+  <title>SHOSE : SHOP - PROSPECS</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,700;1,700&family=Noto+Sans+KR:wght@400;700&family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/shop.css" />
   <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/sub.js"></script>
+  <script src="js/shop.js"></script>
 </head>
 <body>
   <!-- header -->
-  <div id="header_wrap">
-    <header id="header">
-        <div id="logo">
+  <div class="header_wrap">
+    <header class="header margin clearfix">
+      <div class="logo">
+        <h1>
             <a href="index.html">
-                <h1><img src="img/logo.png" alt="PROSPECS"></h1>
+            <img src="img/logo.png" alt="PROSPECS" />
+          </a>
+          </h1>
+      </div>
+  
+      <nav class="nav">
+        <ul class="clearfix">
+          <li class="active">
+            <a href="shop.html">SHOP</a>
+          </li>
+
+          <li>
+            <a href="#">EVENT</a>
+          </li>
+
+          <li>
+            <a href="issue.html">ISSUE</a>
+          </li>
+
+          <li>
+            <a href="lookbook.html">LOOKBOOK</a>
+          </li>
+
+          <li>
+            <a href="sponsership.html">SPONSORSHIP</a>
+          </li>
+
+          <li>
+            <a href="#">SMART FIT</a>
+          </li>
+        </ul>
+      </nav>
+    
+      <div class="header_btns">
+        <ul class="buttons clearfix">
+          <li class="button icon">
+            <a href="#">
+              <img src="img/icon_search.png" alt="검색">
             </a>
-        </div>
+          </li>
 
-        <nav>
-            <ul>
-                <li class="active"><a href="shop.html">SHOP</a></li>
-                <li><a href="#">EVENT</a></li>
-                <li><a href="issue.html">ISSUE</a></li>
-                <li><a href="lookbook.html">LOOKBOOK</a></li>
-                <li><a href="sponsership.html">SPONSORSHIP</a></li>
-                <li><a href="#">SMART FIT</a></li>
-            </ul>
-        </nav>
+          <li class="button icon">
+            <a href="#">
+              <img src="img/icon_user.png" alt="로그인">
+            </a>
+          </li>
 
-        <div id="join">
-            <ul class="icons">
-                <li class="icon"><a href="#"><img src="img/icon_search.png" alt="Search"></a></li>
-                <li class="icon"><a href="#"><img src="img/icon_user.png" alt="User"></a></li>
-                <li class="news"><a href="#"><span>NEWS</span></a></li>
-            </ul>
-        </div>
+          <li class="button news">
+            <a href="#">
+              <span>NEWS</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
   </div>
   <!-- header -->
 
-  <div class="margin shop">
+  <div class="wrap margin">
     <!-- title -->
-    <h2 id="title">SHOSE</h2>
+    <h2 class="title">SHOSE</h2>
     <!-- title -->
 
+
+    <!-- menu -->
     <div class="menu_wrap">
-      <ul class="menu_one">
-        <li><a href="#">BEST 50
-          <ul class="menu_two">
-            <li><a href="#">ORIGINAL</a></li>
-            <li><a href="#">SALE</a></li>
-          </ul>
-        </a></li>
-        <li><a href="#">SHOES
-          <ul class="menu_two">
-            <li class="active"><a href="#">러닝화</a><span></span></li>
-            <li><a href="#">워킹화</a></li>
-            <li><a href="#">스포츠화</a></li>
-            <li><a href="#">트레킹화</a></li>
-            <li><a href="#">스니커즈</a></li>
-            <li><a href="#">샌들/슬리퍼</a></li>
-            <li><a href="#">아동화</a></li>
-            <li><a href="#">기타</a></li>
-          </ul>
-        </a></li>
-        <li><a href="#">MEN
-          <ul class="menu_two">
-            <li><a href="#">티셔츠</a></li>
-            <li><a href="#">스웻셔츠 & 후디</a></li>
-            <li><a href="#">재킷 & 베스트</a></li>
-            <li><a href="#">팬츠 & 타이즈</a></li>
-            <li><a href="#">숏팬츠</a></li>
-            <li><a href="#">트레이닝 상/하</a></li>
-            <li><a href="#">기타</a></li>
-          </ul>
-        </a></li>
-        <li><a href="#">WOMEN
-          <ul class="menu_two">
-            <li><a href="#">티셔츠</a></li>
-            <li><a href="#">스웻셔츠 & 후디</a></li>
-            <li><a href="#">재킷 & 베스트</a></li>
-            <li><a href="#">스포츠 브라</a></li>
-            <li><a href="#">팬츠 & 레깅스</a></li>
-            <li><a href="#">숏팬츠 & 스커트</a></li>
-            <li><a href="#">트레이닝 상/하</a></li>
-            <li><a href="#">기타</a></li>
-          </ul>
-        </a></li>
-        <li><a href="#">BAC/ACC
-          <ul class="menu_two">
-            <li><a href="#">가방</a></li>
-            <li><a href="#">모자 & 헤드밴드</a></li>
-            <li><a href="#">양말</a></li>
-            <li><a href="#">장감 & 암가드</a></li>
-            <li><a href="#">기타</a></li>
-          </ul>
-        </a></li>
-      </ul>
-    </div>
-
-    <div class="con_title">
-      <ul class="hashtag">
-        <li><button class="black">#ORIGINAL</button></li>
-        <li><button class="white">#2022 S/S 신상</button></li>
-        <li><button class="black">#COLLABORATION</button></li>
-        <li><button class="white">#PERFORMANCE</button></li>
-        <li><button class="black">#프로스펙스 스페셜</button></li>
-        <li><button class="white">#친환경</button></li>
-      </ul>
-
-      <ul class="check_box">
+      <ul class="menu_one clearfix">
         <li>
-          <span>최신순</span>
-          <div class="check">
-            <span class="outline"><span class="circle active"></span></span>
-          </div>
+          <a href="#">
+            <ul class="menu_two">
+              <li><a href="#">BEST 50</a></li>
+              <li><a href="#">ORIGINAL</a></li>
+              <li><a href="#">SALE</a></li>
+            </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">SHOES
+            <ul class="menu_two">
+              <li class="active"><a href="#">러닝화</a></li>
+              <li><a href="#">워킹화</a></li>
+              <li><a href="#">스포츠화</a></li>
+              <li><a href="#">트레킹화</a></li>
+              <li><a href="#">스니커즈</a></li>
+              <li><a href="#">샌들/슬리퍼</a></li>
+              <li><a href="#">아동화</a></li>
+              <li><a href="#">기타</a></li>
+            </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">MEN
+            <ul class="menu_two">
+              <li><a href="#">티셔츠</a></li>
+              <li><a href="#">스웻셔츠 & 후디</a></li>
+              <li><a href="#">재킷 & 베스트</a></li>
+              <li><a href="#">팬츠 & 타이즈</a></li>
+              <li><a href="#">숏팬츠</a></li>
+              <li><a href="#">트레이닝 상/하</a></li>
+              <li><a href="#">기타</a></li>
+            </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">WOMEN
+            <ul class="menu_two">
+              <li><a href="#">티셔츠</a></li>
+              <li><a href="#">스웻셔츠 & 후디</a></li>
+              <li><a href="#">재킷 & 베스트</a></li>
+              <li><a href="#">스포츠 브라</a></li>
+              <li><a href="#">팬츠 & 레깅스</a></li>
+              <li><a href="#">숏팬츠 & 스커트</a></li>
+              <li><a href="#">트레이닝 상/하</a></li>
+              <li><a href="#">기타</a></li>
+            </ul>
+          </a>
+        </li>
+
+        <li>
+          <a href="#">BAC/ACC
+            <ul class="menu_two">
+              <li><a href="#">가방</a></li>
+              <li><a href="#">모자 & 헤드밴드</a></li>
+              <li><a href="#">양말</a></li>
+              <li><a href="#">장감 & 암가드</a></li>
+              <li><a href="#">기타</a></li>
+            </ul>
+          </a>
+        </li>
+      </ul><!-- menu_one -->
+    </div><!-- menu_wrap -->
+    <!-- menu -->
+
+
+    <!-- con title -->
+    <div class="con_title clearfix">
+      <ul class="hashtag clearfix">
+        <li><button>#ORIGINAL</button></li>
+        <li><button>#2022 S/S 신상</button></li>
+        <li><button>#COLLABORATION</button></li>
+        <li><button>#PERFORMANCE</button></li>
+        <li><button>#프로스펙스 스페셜</button></li>
+        <li><button>#친환경</button></li>
+      </ul>
+
+      <div class="check_box clearfix">
+        <li>
+          <label for="new">최신순</label>
+          <input id="new" type="radio" name="radio" checked />
         </li>
         <li>
-          <span>인기순</span>
-          <div class="check">
-            <span class="outline"><span class="circle"></span></span>
-          </div>
+          <label for="popular">인기순</label>
+          <input id="popular" type="radio" name="radio" />
         </li>
-      </ul>
+      </div>
     </div>
+    <!-- con title -->
 
+
+    <!-- section wrap -->
     <div class="section_wrap">
-      <section id="section1">
-        <div class="con_wrap1 con_wrap">
-          <div class="main_con"><a href="product.html">
+      <!-- section1 -->
+      <section class="section1 clearfix">
+        <div class="main_img">
+          <a href="product.html">
             <div class="img_wrap">
-              <img src="img/shop1_main.png
-              " alt="" />
-              
-            <h2><span>2022 S/S</span><br/>ENER-JET<br/>112</h2>
+              <img src="img/shop1_main.png" alt="에너젯 112" />
             </div>
-          </a></div>
-  
-          <div class="con con1"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop1-1.jpg" alt="">
-              <img src="img/shop1-1_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>에너젯 112</h4>
-              <div class="price">
-                <span class="normal_price">119,000원</span>
-                <span class="discount_price">88,590원</span>
-                <span class="discount_rate">26%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con2"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop1-2.jpg" alt="">
-              <img src="img/shop1-2_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[온라인 특가]</p>
-              <h4>스피드 레이서 311</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">30,100원</span>
-                <span class="discount_rate">56%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con3"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop1-3.jpg" alt="">
-              <img src="img/shop1-3_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>슈퍼라이트 111</h4>
-              <div class="price">
-                <span class="normal_price">89,000원</span>
-                <span class="discount_price">74,700원</span>
-                <span class="discount_rate">16%</span>
-                </div>
-            </div>
-          </a></div>
-  
-          <div class="con con4"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop1-4.jpg" alt="">
-              <img src="img/shop1-4_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[온라인 단독특가]</p>
-              <h4>런더 101</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">27,100원</span>
-                <span class="discount_rate">61%</span>
-              </div>
-            </div>
-          </a></div>
+            <h2>
+              <span>2022 S/S</span><br/>
+              ENER-JET<br/>
+              112
+            </h2>
+          </a>
         </div>
-  
-        <div class="con_wrap2 con_wrap">
-          <div class="con con5"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop1-5.jpg" alt="">
-              <img src="img/shop1-5_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[온라인 단독특가]</p>
-              <h4>플릭 슬라이드 101</h4>
-              <div class="price">
-                <span class="normal_price">29,000원</span>
-                <span class="discount_price">20,280원</span>
-                <span class="discount_rate">30%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con6"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop1-6.jpg" alt="">
-              <img src="img/shop1-6_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[온라인 단독특가]</p>
-              <h4>풋워크 111</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">35,160원</span>
-                <span class="discount_rate">49%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con7"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop1-7.jpg" alt="">
-              <img src="img/shop1-7_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>블레이드 BX 211</h4>
-              <div class="price">
-                <span class="normal_price">199,000원</span>
-                <span class="discount_price">132,080원</span>
-                <span class="discount_rate">34%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con8"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop1-8.jpg" alt="">
-              <img src="img/shop1-8_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>스피드 레이서 104</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">47,280원</span>
-                <span class="discount_rate">31%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con9"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop1-9.jpg" alt="">
-              <img src="img/shop1-9_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>블레이드 BX 214</h4>
-              <div class="price">
-                <span class="normal_price">199,000원</span>
-                <span class="discount_price">132,080원</span>
-                <span class="discount_rate">34%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con10"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop1-10.jpg" alt="">
-              <img src="img/shop1-10_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>에어링 411 (R) (온라인 전용상품)</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">55,200원</span>
-                <span class="discount_rate">20%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con11"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop1-11.jpg" alt="">
-              <img src="img/shop1-11_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>에너젯 111</h4>
-              <div class="price">
-                <span class="normal_price">119,000원</span>
-                <span class="discount_price">107,100원</span>
-                <span class="discount_rate">10%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con12"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop1-12.jpg" alt="">
-              <img src="img/shop1-12_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>크로스 엑스 416</h4>
-              <div class="price">
-                <span class="normal_price">89,000원</span>
-                <span class="discount_price">71,200원</span>
-                <span class="discount_rate">20%</span>
-              </div>
-            </div>
-          </a></div>
-        </div>
-      </section>
-  
-      <section id="section2">
-        <div class="con_wrap1 con_wrap">
-          <div class="main_con"><a href="product.html">
-            <div class="img_wrap">
-              <img src="img/shop2_main.png
-              " alt="" />
-              
-            <h2><span>2022 S/S</span><br/>ODX<br/>113</h2>
-            </div>
-          </a></div>
-  
-          <div class="con con1"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop2-1.jpg" alt="">
-              <img src="img/shop2-1_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>에너젯 112</h4>
-              <div class="price">
-                <span class="normal_price">119,000원</span>
-                <span class="discount_price">88,590원</span>
-                <span class="discount_rate">26%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con2"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop2-2.jpg" alt="">
-              <img src="img/shop2-2_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[온라인 특가]</p>
-              <h4>스피드 레이서 311</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">30,100원</span>
-                <span class="discount_rate">56%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con3"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop2-3.jpg" alt="">
-              <img src="img/shop2-3_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>슈퍼라이트 111</h4>
-              <div class="price">
-                <span class="normal_price">89,000원</span>
-                <span class="discount_price">74,700원</span>
-                <span class="discount_rate">16%</span>
-                </div>
-            </div>
-          </a></div>
-  
-          <div class="con con4"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop2-4.jpg" alt="">
-              <img src="img/shop2-4_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[온라인 단독특가]</p>
-              <h4>런더 101</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">27,100원</span>
-                <span class="discount_rate">61%</span>
-              </div>
-            </div>
-          </a></div>
-        </div>
-  
-        <div class="con_wrap2 con_wrap">
-          <div class="con con5"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop2-5.jpg" alt="">
-              <img src="img/shop2-5_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[온라인 단독특가]</p>
-              <h4>플릭 슬라이드 101</h4>
-              <div class="price">
-                <span class="normal_price">29,000원</span>
-                <span class="discount_price">20,280원</span>
-                <span class="discount_rate">30%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con6"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop2-6.jpg" alt="">
-              <img src="img/shop2-6_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[온라인 단독특가]</p>
-              <h4>풋워크 111</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">35,160원</span>
-                <span class="discount_rate">49%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con7"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop2-7.jpg" alt="">
-              <img src="img/shop2-7_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>블레이드 BX 211</h4>
-              <div class="price">
-                <span class="normal_price">199,000원</span>
-                <span class="discount_price">132,080원</span>
-                <span class="discount_rate">34%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con8"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop2-8.jpg" alt="">
-              <img src="img/shop2-8_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>스피드 레이서 104</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">47,280원</span>
-                <span class="discount_rate">31%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con9"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop2-9.jpg" alt="">
-              <img src="img/shop2-9_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>블레이드 BX 214</h4>
-              <div class="price">
-                <span class="normal_price">199,000원</span>
-                <span class="discount_price">132,080원</span>
-                <span class="discount_rate">34%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con10"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop2-10.jpg" alt="">
-              <img src="img/shop2-10_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>에어링 411 (R) (온라인 전용상품)</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">55,200원</span>
-                <span class="discount_rate">20%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con11"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop2-11.jpg" alt="">
-              <img src="img/shop2-11_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>에너젯 111</h4>
-              <div class="price">
-                <span class="normal_price">119,000원</span>
-                <span class="discount_price">107,100원</span>
-                <span class="discount_rate">10%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con12"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop2-12.jpg" alt="">
-              <img src="img/shop2-12_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>크로스 엑스 416</h4>
-              <div class="price">
-                <span class="normal_price">89,000원</span>
-                <span class="discount_price">71,200원</span>
-                <span class="discount_rate">20%</span>
-              </div>
-            </div>
-          </a></div>
-        </div>
-      </section>
-  
-      <section id="section3">
-        <div class="con_wrap1 con_wrap">
-          <div class="main_con"><a href="product.html">
-            <div class="img_wrap">
-              <img src="img/shop3_main.png
-              " alt="" />
-              
-            <h2><span>2022 S/S</span><br/>TRIGGER-RUN<br/>102</h2>
-            </div>
-          </a></div>
-  
-          <div class="con con1"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop3-1.jpg" alt="">
-              <img src="img/shop3-1_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>에너젯 112</h4>
-              <div class="price">
-                <span class="normal_price">119,000원</span>
-                <span class="discount_price">88,590원</span>
-                <span class="discount_rate">26%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con2"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop3-2.jpg" alt="">
-              <img src="img/shop3-2_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[온라인 특가]</p>
-              <h4>스피드 레이서 311</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">30,100원</span>
-                <span class="discount_rate">56%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con3"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop3-3.jpg" alt="">
-              <img src="img/shop3-3_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>슈퍼라이트 111</h4>
-              <div class="price">
-                <span class="normal_price">89,000원</span>
-                <span class="discount_price">74,700원</span>
-                <span class="discount_rate">16%</span>
-                </div>
-            </div>
-          </a></div>
-  
-          <div class="con con4"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop3-4.jpg" alt="">
-              <img src="img/shop3-4_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[온라인 단독특가]</p>
-              <h4>런더 101</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">27,100원</span>
-                <span class="discount_rate">61%</span>
-              </div>
-            </div>
-          </a></div>
-        </div>
-  
-        <div class="con_wrap2 con_wrap">
-          <div class="con con5"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop3-5.jpg" alt="">
-              <img src="img/shop3-5_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[온라인 단독특가]</p>
-              <h4>플릭 슬라이드 101</h4>
-              <div class="price">
-                <span class="normal_price">29,000원</span>
-                <span class="discount_price">20,280원</span>
-                <span class="discount_rate">30%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con6"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop3-6.jpg" alt="">
-              <img src="img/shop3-6_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[온라인 단독특가]</p>
-              <h4>풋워크 111</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">35,160원</span>
-                <span class="discount_rate">49%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con7"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop3-7.jpg" alt="">
-              <img src="img/shop3-7_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>블레이드 BX 211</h4>
-              <div class="price">
-                <span class="normal_price">199,000원</span>
-                <span class="discount_price">132,080원</span>
-                <span class="discount_rate">34%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con8"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop3-8.jpg" alt="">
-              <img src="img/shop3-8_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>스피드 레이서 104</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">47,280원</span>
-                <span class="discount_rate">31%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con9"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop3-9.jpg" alt="">
-              <img src="img/shop3-9_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>블레이드 BX 214</h4>
-              <div class="price">
-                <span class="normal_price">199,000원</span>
-                <span class="discount_price">132,080원</span>
-                <span class="discount_rate">34%</span>
-              </div>
-            </div>
-          </a></div>
-  
-          <div class="con con10"><a href="#">
-            <div class="img_wrap">
-              <img src="img/shop3-10.jpg" alt="">
-              <img src="img/shop3-10_hover.jpg" alt="" class="hover">
-            </div>
-            <div class="text_box">
-              <p>[2022 S/S 신상]</p>
-              <h4>에어링 411 (R) (온라인 전용상품)</h4>
-              <div class="price">
-                <span class="normal_price">69,000원</span>
-                <span class="discount_price">55,200원</span>
-                <span class="discount_rate">20%</span>
-              </div>
-            </div>
-          </a></div>
-        </div>
-      </section>
-    </div>
-    
+        <!-- main_img -->
 
-    <div id="pager">
-      <button class="prev_btn"><img src="img/prev_btn.png" alt="prev button" /></button>
-      <ul class="num">
+
+        <!-- article -->
+        <article class="con con1">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop1-1.jpg" alt="" />
+              <img class="hover" src="img/shop1-1_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>에너젯 112</h4>
+              <div class="price">
+                <span class="normal_price">119,000원</span>
+                <span class="discount_price">88,590원</span>
+                <span class="discount_rate">26%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con2">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop1-2.jpg" alt="" />
+              <img class="hover" src="img/shop1-2_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[온라인 특가]</p>
+              <h4>스피드 레이서 311</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">30,100원</span>
+                <span class="discount_rate">56%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con3">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop1-3.jpg" alt="" />
+              <img class="hover" src="img/shop1-3_hover.jpg" alt=""  />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>슈퍼라이트 111</h4>
+              <div class="price">
+                <span class="normal_price">89,000원</span>
+                <span class="discount_price">74,700원</span>
+                <span class="discount_rate">16%</span>
+                </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con4">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop1-4.jpg" alt="" />
+              <img class="hover" src="img/shop1-4_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[온라인 단독특가]</p>
+              <h4>런더 101</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">27,100원</span>
+                <span class="discount_rate">61%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con5">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop1-5.jpg" alt="" />
+              <img class="hover" src="img/shop1-5_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[온라인 단독특가]</p>
+              <h4>플릭 슬라이드 101</h4>
+              <div class="price">
+                <span class="normal_price">29,000원</span>
+                <span class="discount_price">20,280원</span>
+                <span class="discount_rate">30%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con6">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop1-6.jpg" alt="" />
+              <img class="hover" src="img/shop1-6_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[온라인 단독특가]</p>
+              <h4>풋워크 111</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">35,160원</span>
+                <span class="discount_rate">49%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con7">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop1-7.jpg" alt="" />
+              <img class="hover" src="img/shop1-7_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>블레이드 BX 211</h4>
+              <div class="price">
+                <span class="normal_price">199,000원</span>
+                <span class="discount_price">132,080원</span>
+                <span class="discount_rate">34%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con8">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop1-8.jpg" alt="" />
+              <img class="hover" src="img/shop1-8_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>스피드 레이서 104</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">47,280원</span>
+                <span class="discount_rate">31%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con9">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop1-9.jpg" alt="" />
+              <img class="hover" src="img/shop1-9_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>블레이드 BX 214</h4>
+              <div class="price">
+                <span class="normal_price">199,000원</span>
+                <span class="discount_price">132,080원</span>
+                <span class="discount_rate">34%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con10">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop1-10.jpg" alt="" />
+              <img class="hover" src="img/shop1-10_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>에어링 411 (R) (온라인 전용상품)</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">55,200원</span>
+                <span class="discount_rate">20%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con11">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop1-11.jpg" alt="" />
+              <img class="hover" src="img/shop1-11_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>에너젯 111</h4>
+              <div class="price">
+                <span class="normal_price">119,000원</span>
+                <span class="discount_price">107,100원</span>
+                <span class="discount_rate">10%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con12">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop1-12.jpg" alt="" />
+              <img class="hover" src="img/shop1-12_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>크로스 엑스 416</h4>
+              <div class="price">
+                <span class="normal_price">89,000원</span>
+                <span class="discount_price">71,200원</span>
+                <span class="discount_rate">20%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </section>
+      <!-- section1 -->
+
+  
+      <!-- section2 -->
+      <section class="section2 clearfix">
+        <div class="main_img">
+          <a href="product.html">
+            <div class="img_wrap">
+              <img src="img/shop2_main.png" alt="ODX 113" />
+            </div>
+            <h2>
+              <span>2022 S/S</span><br/>
+              ODX<br/>
+              113
+            </h2>
+          </a>
+        </div>
+        <!-- main_img -->
+  
+        
+        <!-- article -->
+        <article class="con con1">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop2-1.jpg" alt="" />
+              <img class="hover" src="img/shop2-1_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>에너젯 112</h4>
+              <div class="price">
+                <span class="normal_price">119,000원</span>
+                <span class="discount_price">88,590원</span>
+                <span class="discount_rate">26%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con2">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop2-2.jpg" alt="" />
+              <img class="hover" src="img/shop2-2_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[온라인 특가]</p>
+              <h4>스피드 레이서 311</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">30,100원</span>
+                <span class="discount_rate">56%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con3">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop2-3.jpg" alt="" />
+              <img class="hover" src="img/shop2-3_hover.jpg" alt=""  />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>슈퍼라이트 111</h4>
+              <div class="price">
+                <span class="normal_price">89,000원</span>
+                <span class="discount_price">74,700원</span>
+                <span class="discount_rate">16%</span>
+                </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con4">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop2-4.jpg" alt="" />
+              <img class="hover" src="img/shop2-4_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[온라인 단독특가]</p>
+              <h4>런더 101</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">27,100원</span>
+                <span class="discount_rate">61%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con5">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop2-5.jpg" alt="" />
+              <img class="hover" src="img/shop2-5_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[온라인 단독특가]</p>
+              <h4>플릭 슬라이드 101</h4>
+              <div class="price">
+                <span class="normal_price">29,000원</span>
+                <span class="discount_price">20,280원</span>
+                <span class="discount_rate">30%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con6">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop2-6.jpg" alt="" />
+              <img class="hover" src="img/shop2-6_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[온라인 단독특가]</p>
+              <h4>풋워크 111</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">35,160원</span>
+                <span class="discount_rate">49%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con7">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop2-7.jpg" alt="" />
+              <img class="hover" src="img/shop2-7_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>블레이드 BX 211</h4>
+              <div class="price">
+                <span class="normal_price">199,000원</span>
+                <span class="discount_price">132,080원</span>
+                <span class="discount_rate">34%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con8">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop2-8.jpg" alt="" />
+              <img class="hover" src="img/shop2-8_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>스피드 레이서 104</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">47,280원</span>
+                <span class="discount_rate">31%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con9">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop2-9.jpg" alt="" />
+              <img class="hover" src="img/shop2-9_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>블레이드 BX 214</h4>
+              <div class="price">
+                <span class="normal_price">199,000원</span>
+                <span class="discount_price">132,080원</span>
+                <span class="discount_rate">34%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con10">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop2-10.jpg" alt="" />
+              <img class="hover" src="img/shop2-10_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>에어링 411 (R) (온라인 전용상품)</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">55,200원</span>
+                <span class="discount_rate">20%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con11">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop2-11.jpg" alt="" />
+              <img class="hover" src="img/shop2-11_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>에너젯 111</h4>
+              <div class="price">
+                <span class="normal_price">119,000원</span>
+                <span class="discount_price">107,100원</span>
+                <span class="discount_rate">10%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con12">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop2-12.jpg" alt="" />
+              <img class="hover" src="img/shop2-12_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>크로스 엑스 416</h4>
+              <div class="price">
+                <span class="normal_price">89,000원</span>
+                <span class="discount_price">71,200원</span>
+                <span class="discount_rate">20%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </section>
+      <!-- section2 -->
+
+
+      <!-- section3 -->
+      <section class="section3 clearfix">
+        <div class="main_img">
+          <a href="product.html">
+            <div class="img_wrap">
+              <img src="img/shop3_main.png" alt="트리거런 102" />
+            </div>
+            <h2>
+              <span>2022 S/S</span><br/>
+              TRIGGER-RUN<br/>
+              102
+            </h2>
+          </a>
+        </div>
+        <!-- main_img -->
+
+
+        <!-- article -->
+        <article class="con con1">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop3-1.jpg" alt="" />
+              <img class="hover" src="img/shop3-1_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>에너젯 112</h4>
+              <div class="price">
+                <span class="normal_price">119,000원</span>
+                <span class="discount_price">88,590원</span>
+                <span class="discount_rate">26%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con2">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop3-2.jpg" alt="" />
+              <img class="hover" src="img/shop3-2_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[온라인 특가]</p>
+              <h4>스피드 레이서 311</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">30,100원</span>
+                <span class="discount_rate">56%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con3">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop3-3.jpg" alt="" />
+              <img class="hover" src="img/shop3-3_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>슈퍼라이트 111</h4>
+              <div class="price">
+                <span class="normal_price">89,000원</span>
+                <span class="discount_price">74,700원</span>
+                <span class="discount_rate">16%</span>
+                </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con4">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop3-4.jpg" alt="" />
+              <img class="hover" src="img/shop3-4_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[온라인 단독특가]</p>
+              <h4>런더 101</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">27,100원</span>
+                <span class="discount_rate">61%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con5">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop3-5.jpg" alt="" />
+              <img class="hover" src="img/shop3-5_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[온라인 단독특가]</p>
+              <h4>플릭 슬라이드 101</h4>
+              <div class="price">
+                <span class="normal_price">29,000원</span>
+                <span class="discount_price">20,280원</span>
+                <span class="discount_rate">30%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con6">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop3-6.jpg" alt="" />
+              <img class="hover" src="img/shop3-6_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[온라인 단독특가]</p>
+              <h4>풋워크 111</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">35,160원</span>
+                <span class="discount_rate">49%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con7">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop3-7.jpg" alt="" />
+              <img class="hover" src="img/shop3-7_hover.jpg" alt="" />
+            </div>
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>블레이드 BX 211</h4>
+              <div class="price">
+                <span class="normal_price">199,000원</span>
+                <span class="discount_price">132,080원</span>
+                <span class="discount_rate">34%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con8">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop3-8.jpg" alt="" />
+              <img class="hover" src="img/shop3-8_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>스피드 레이서 104</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">47,280원</span>
+                <span class="discount_rate">31%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con9">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop3-9.jpg" alt="" />
+              <img class="hover" src="img/shop3-9_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>블레이드 BX 214</h4>
+              <div class="price">
+                <span class="normal_price">199,000원</span>
+                <span class="discount_price">132,080원</span>
+                <span class="discount_rate">34%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+  
+        <article class="con con10">
+          <a href="#">
+            <div class="img_wrap">
+              <img src="img/shop3-10.jpg" alt="" />
+              <img class="hover" src="img/shop3-10_hover.jpg" alt="" />
+            </div>
+
+            <div class="text_box">
+              <p>[2022 S/S 신상]</p>
+              <h4>에어링 411 (R) (온라인 전용상품)</h4>
+              <div class="price">
+                <span class="normal_price">69,000원</span>
+                <span class="discount_price">55,200원</span>
+                <span class="discount_rate">20%</span>
+              </div>
+            </div>
+          </a>
+        </article>
+      </section>
+      <!-- section3 -->
+    </div>
+    <!-- section wrap -->
+
+
+    <!-- pager -->
+    <div class="pager clearfix">
+      <button class="prev_btn">
+        <img src="img/prev_btn.png" alt="이전" />
+      </button>
+
+      <ul class="num clearfix">
         <li class="num1 active">1</li>
         <li class="num2">2</li>
         <li class="num3">3</li>
       </ul>
-      <button class="next_btn"><img src="img/next_btn.png" alt="next button"></button>
-    </div>
 
-  </div>
+      <button class="next_btn">
+        <img src="img/next_btn.png" alt="다음" />
+      </button>
+    </div>
+    <!-- pager -->
+  </div><!-- wrap -->
 
   <!-- footer -->
-  <footer>
-    <div id="footer_up">
-        <ul class="clearfix">
-            <li><a href="#footer_up">개인정보처리방침</a></li>
-            <li><a href="#footer_up">고객센터</a></li>
-            <li><a href="#footer_up">A/S 안내</a></li>
-            <li><a href="#footer_up">공지사항</a></li>
-            <li><a href="#footer_up">앱다운로드</a></li>
-        </ul>
+  <footer class="footer margin">
+    <div class="footer_up">
+      <ul class="clearfix">
+        <li>
+          <a href="#footer_up">개인정보처리방침</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">고객센터</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">A/S 안내</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">공지사항</a>
+        </li>
+
+        <li>
+          <a href="#footer_up">앱다운로드</a>
+        </li>
+      </ul>
     </div>
 
-    <div id="footer_down">
-        <ul class="clearfix">
-            <li>
-                <div class="f_title">회사소개</div>
-                <span>
-                    (주)LS네트웍스<br/>
-                    대표이사 : 문성준 | 사업자등록번호 : 622-81-04805<br/>
-                    통신판매업 신고번호 : 2016-경남김해-0229<br/>
-                    경상남도 김해시 호계로 428, 1층(부원동) </span><a>사업자정보확인</a><br/>
-                    <span>개인정보관리 책임자 : 예재승
-                </span>
-                <span>prospecsonline@lsnetworks.com</span>
-            </li>
-            <li>
-                <div class="f_title">CONTACT US</div>
-                <span>구매 / 배송 문의</span>  <a>080-710-1020</a><br/>
-                <span>상품정보 / AS문의</span>   <a>080-023-1020</a>
-                
-                <span>
-                    MON - FRI 09 : 00 - 18:00<br/>
-                    주말, 공휴일 휴무<br/>
-                    BREAK TIME : 12:30 - 13:30
-                </span>
-                <span>© LS NETWORKS CO. ALL RIGHTS RESERVED</span>
-            </li>
-            <li>
-                <div class="f_title">SGI서울보증안내</div>
-                <span>고객님께서 안전거래를 위해 현금 등으로 결제하신 경우,<br/>
-                    저희 쇼핑몰에서 가입한 소비자피해보상보험 서비스를 <br/>
-                    이용하실 수 있습니다. 
-                </span>
-                <a>서비스 가입 사실 확인</a>
-            </li> 
-        </ul>
+    <div class="footer_down">
+      <ul class="clearfix">
+        <li>
+          <h4 class="f_title">회사소개</h4>
+          <p>
+            (주)LS네트웍스<br/>
+            대표이사 : 문성준 | 사업자등록번호 : 622-81-04805<br/>
+            통신판매업 신고번호 : 2016-경남김해-0229<br/>
+            경상남도 김해시 호계로 428, 1층(부원동) 사업자정보확인<br/>
+            개인정보관리 책임자 : 예재승<br/>
+            prospecsonline@lsnetworks.com
+          </p>
+        </li>
+
+        <li>
+          <h4 class="f_title">CONTACT US</h4>
+          <p>
+            구매 / 배송 문의<br/>
+            080-710-1020<br/>
+            상품정보 / AS문의<br/>
+            080-023-1020<br/>
+            MON - FRI 09 : 00 - 18:00<br/>
+            주말, 공휴일 휴무<br/>
+            BREAK TIME : 12:30 - 13:30<br/>
+            © LS NETWORKS CO. ALL RIGHTS RESERVED
+          </p>
+        </li>
+
+        <li>
+          <h4 class="f_title">SGI서울보증안내</h4>
+          <span>
+            고객님께서 안전거래를 위해 현금 등으로 결제하신 경우,<br/>
+            저희 쇼핑몰에서 가입한 소비자피해보상보험 서비스를 <br/>
+            이용하실 수 있습니다. 
+          </span>
+          <a href="#">서비스 가입 사실 확인</a>
+        </li>
+      </ul>
     </div>
   </footer>
   <!-- footer -->

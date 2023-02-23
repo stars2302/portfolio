@@ -75,8 +75,13 @@ $(function(){
     $(this).addClass('active').siblings().removeClass('active');
 
     //sub title에 맞는 content 변환
-    section.eq(index).addClass('show').siblings().removeClass('show');
-    index = 0;
+    section.eq(index).removeClass('hide').siblings().addClass('hide');
+
+    //pageIndex 초기화
+    pageIndex = 0;
+    pageBtn.eq(pageIndex).addClass('active').siblings().removeClass('active');
+    page.eq(pageIndex).removeClass('hide').siblings().addClass('hide');
+    console.log(pageIndex);
   });
 
 
@@ -85,31 +90,45 @@ $(function(){
   var pageBtn = $('.page_btns > ul > li');
   var prevBtn = $('.page_btns > .prev_btn');
   var nextBtn = $('.page_btns > .next_btn');
-  var index = 0;
+  var pageIndex = 0;
 
   var page = section.find('section');
+  console.log(page);
 
-  //page버튼 클릭하면
+  //nextBtn 클릭하면
   nextBtn.click(function(){
     $(window).scrollTop(0);
-    if(section.hasClass('show')){
-      
+    if(pageIndex == 1) { //마지막 page에서 머무르기
+      pageIndex = 1;
+      pageBtn.eq(pageIndex).addClass('active').siblings().removeClass('active');
 
-      if(index == 1) { //다시 1번 page로 돌아오기
-        index = 0;
-        pageBtn.eq(index).addClass('active').siblings().removeClass('active');
-        page.eq(index).addClass('show').siblings().removeClass('show');
-
-      } else { //클릭할 때 마다 page 번호 더하기
-        index++;
-        pageBtn.eq(index).addClass('active').siblings().removeClass('active');
-        page.eq(index).addClass('show').siblings().removeClass('show');
-      }
+    } else { //클릭할 때 마다 page 번호 더하기
+      pageIndex++;
+      pageBtn.eq(pageIndex).addClass('active').siblings().removeClass('active');
+      page.eq(pageIndex).removeClass('hide').siblings().addClass('hide');
     }
-
-    console.log(index);
+    
+    console.log(pageIndex);
   });// next button click
-  nextBtn.trigger('click')
+
+
+
+  //prevBtn 클릭하면
+  prevBtn.click(function(){
+    $(window).scrollTop(0);
+    if(pageIndex == 0) { //첫번째 page에서 머무르기
+      pageIndex = 0;
+      pageBtn.eq(pageIndex).addClass('active').siblings().removeClass('active');
+
+    } else { //클릭할 때 마다 page 번호 더하기
+      pageIndex--;
+      pageBtn.eq(pageIndex).addClass('active').siblings().removeClass('active');
+      page.eq(pageIndex).removeClass('hide').siblings().addClass('hide');
+    }
+    
+    console.log(pageIndex);
+  });// next button click
+
 
 
 }); //documend ready

@@ -38,7 +38,6 @@ $(function(){
         item2.fadeIn(300);
         item2.find('img').attr('src','img/about_item2.svg');
         item2.addClass('sec2_item');
-        console.log('sec2입니당')
 
       } else {
         item1.removeClass('sec2_item');
@@ -73,7 +72,6 @@ $(function(){
         item2.find('img').eq(0).attr('src','img/design_item2.svg');
         item2.find('img').eq(1).attr('src','img/design_item3.svg');
         item2.addClass('sec4_item');
-        console.log('sec4입니당')
       
       } else {
         item1.removeClass('sec4_item');
@@ -205,50 +203,44 @@ $(function(){
 
 
 
-  // ----- mobile -- section2, 3, 4 animation -----
+  // ---------------- section2, 3, 4 animation ----------------
   var sec2Content = $('.section2 article'),
       sec3Content = $('.section3 .site_items .site_item'),
       sec4Content = $('.section4 .design_items');
 
 
-  $(window).resize(function(){
-    var windowWidth = $(this).outerWidth();
+  $(window).scroll(function(){
+    var windowScroll = $(this).scrollTop();
 
-    if(windowWidth <= 1450){
-      $(window).scroll(function(){
-        var windowScroll = $(this).scrollTop();
+    // section2 animation
+    sec2Content.each(function(){
+      var contentOST = $(this).offset().top - 500;
 
-        // section2 animation -- mobile
-        sec2Content.each(function(){
-          var contentOST = $(this).offset().top - 500;
+      if(windowScroll >= contentOST) {
+        $(this).addClass('active');
+      } else {
+        $(this).removeClass('active');
+      }
+    });
 
-          if(windowScroll >= contentOST) {
-            $(this).addClass('active');
-          } else {
-            $(this).removeClass('active');
-          }
-        });
+    // section3 animation
+    sec3Content.each(function(){
+      var contentOST = $(this).offset().top - 600;
 
-        sec3Content.each(function(){
-          var contentOST = $(this).offset().top - 600;
+      if(windowScroll >= contentOST) {
+        $(this).addClass('active');
+      } else {
+        $(this).removeClass('active');
+      }
+    });
 
-          if(windowScroll >= contentOST) {
-            $(this).addClass('active');
-          } else {
-            $(this).removeClass('active');
-          }
-        });
-
-        if(windowScroll >= sec4OST) {
-          sec4Content.addClass('active');
-        } else {
-          sec4Content.removeClass('active');
-        }
-      }); //scroll
-    } //if windowWidth 1450이하
-  }); //window resize
-
-  
+    // section4 animation
+    if(windowScroll >= sec4OST) {
+      sec4Content.addClass('active');
+    } else {
+      sec4Content.removeClass('active');
+    }
+  }); //scroll
   // ----- mobile -- section2, 3, 4 animation -----
 
 
@@ -332,7 +324,40 @@ $(function(){
   });
   //-------- section2 article3 chart animation --------
   
-  
+
+
+
+  //-------------- section4 modal --------------
+  var $sec4Item = $('.section4 .design_items .design_item');
+  var $sec4Modal = $('.section4 .modal');
+
+  //sec4 design_item 클릭하면
+  $sec4Item.click(function(){
+    var imgIDX = $(this).index() + 1;
+    
+    //modal 나타나기
+    $sec4Modal.show();
+
+    //deco_item, header - z-index 숨기기
+    $('.deco_item,.header_wrap').hide();
+    $('body,html').css({'overflow-y':'hidden'});
+
+    //modal img 경로바꿔 해당 사진 띄우기
+    $sec4Modal.find('img').attr('src','img/design'+imgIDX+'_modal.jpg');
+  });
+
+  //modal 클릭하면
+  $sec4Modal.click(function(){
+    //modal 숨기기
+    $(this).hide();
+
+    //deco_item, header - z-index 나타나기
+    $('.deco_item,.header_wrap').show();
+    $('body,html').css({'overflow-y':'auto'});
+  });
+
+
+  //-------------- section4 modal --------------
   $(window).trigger('scroll');
   $(window).trigger('resize');
 }); //document

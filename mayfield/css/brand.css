@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 @import url(reset.css);
 
 :root {
@@ -52,7 +52,7 @@ body {
 }
 
 .header_wrap.top .header .logo {
-  transform: scale(85%);
+  transform: scale(0.85);
 }
 
 .header_wrap.top ~ .main_slide .back {
@@ -649,10 +649,6 @@ article .img_wrap img {
   transition: .7s;
 }
 
-.section4 p:nth-child(1) {
-  transition-delay: 0;
-}
-
 .section4 p:nth-child(2) {
   transition-delay: 0.7s;
 }
@@ -825,7 +821,7 @@ article .img_wrap img {
 
   .header .logo {
     margin: 0 auto;
-    transform: scale(90%);
+    transform: scale(0.9);
   }
   /* screen width 1200px header */
 

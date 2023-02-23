@@ -29,22 +29,21 @@ $(function(){
   $('.con1').find(playBtn).click(function(){
     console.log($(this));
     $modal.fadeIn();
-    $modal.find('iframe').eq(0).show();
+    $modal.find('iframe').eq(0).show().siblings().hide();
   });
 
   //con2 video button click
   $('.con2').find(playBtn).click(function(){
     console.log($(this));
     $modal.fadeIn();
-    $modal.find('iframe').eq(1).show();
+    $modal.find('iframe').eq(1).show().siblings().hide();
   });
 
   //con3 video button click
   $('.con3').find(playBtn).click(function(){
     console.log($(this));
     $modal.fadeIn();
-    $modal.find('iframe').eq(2).show();
-    console.log($modal.find('iframe').eq(2));
+    $modal.find('iframe').eq(2).show().siblings().hide();
   });
 
   $modal.click(function(){

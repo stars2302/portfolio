@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 @import url("reset.css");
 
 :root {
@@ -252,7 +252,7 @@ p {
   }
   
   .section2 .con .img_wrap:hover img {
-    transform: scale(105%);
+    transform: scale(1.05);
   }
 }
 

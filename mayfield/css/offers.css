@@ -1,4 +1,4 @@
-@charset 'utf-8';
+@charset "utf-8";
 @import url(reset.css);
 
 :root {
@@ -52,7 +52,7 @@ body {
 }
 
 .header_wrap.top .header .logo {
-  transform: scale(85%);
+  transform: scale(0.85);
 }
 
 .header_wrap.top ~ .main_slide .back {
@@ -424,31 +424,17 @@ body {
 }
 /* ------------------------ title ------------------------ */
 
-.contents > div section {
+.offers_contents > div section {
   position: relative;
 }
 
-.contents > div,
-.contents > div section {
+.offers_contents > div.hide {
   display: none;
 }
 
-.contents > div.show {
-  display: block;
-}
-
-/* .contents > div.show section:first-child {
-  display: block;
-} */
-
-.contents > div.show section.show {
-  display: block;
-}
-
-.contents > div.show section {
+.offers_contents > div section.hide {
   display: none;
 }
-
 
 /* ------------------------ con ------------------------ */
 section article.con {
@@ -467,13 +453,7 @@ section article.con > a {
 
 @media (hover:hover) and (pointer:fine) {/* pc */
   section article.con .img_wrap:hover img {
-    transform: scale(105%);
-  }
-}
-
-@media (hover:hover) and (pointer:coarse) {/* mobile */
-  section article.con .img_wrap img {
-    transform: scale(105%);
+    transform: scale(1.05);
   }
 }
 
@@ -768,7 +748,7 @@ section article.con_column .text_box {
 
   .header .logo {
     margin: 0 auto;
-    transform: scale(90%);
+    transform: scale(0.9);
   }
   /* screen width 1200px header */
 

@@ -501,7 +501,7 @@ body {
   position: relative;
   top: -50px;
   opacity: 0;
-  transition: 1.5s;
+  transition: 1s;
   transition-delay: 1.5s;
 }
 

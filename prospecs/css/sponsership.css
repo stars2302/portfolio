@@ -293,7 +293,7 @@ p {
   top: -30px;
   opacity: 0;
   transition: .6s;
-  transition-delay: .6s;
+  transition-delay: .3s;
 }
 
 .section2 .con_v1 .contents .imgs {
@@ -303,7 +303,7 @@ p {
   bottom: -50px;
   opacity: 0;
   transition: .6s;
-  transition-delay: 1s;
+  transition-delay: .6s;
 }
 
 .section2 .con_v1 .contents .img_wrap {
@@ -359,7 +359,7 @@ p {
   top: -30px;
   opacity: 0;
   transition: .6s;
-  transition-delay: .6s;
+  transition-delay: .3s;
 }
 
 .section2 .con_v2 .contents .video_wrap {
@@ -370,7 +370,7 @@ p {
   transform: translateY(50px);
   opacity: 0;
   transition: .6s;
-  transition-delay: 1s;
+  transition-delay: .6s;
 }
 
 .section2 .con_v2 .contents .video {

@@ -175,7 +175,7 @@ $(function(){
   tab.click(function(e){
     var idx = $(this).index();
     var section = $('section').eq(idx);
-    var sectionOST = section.offset().top - 150;
+    var sectionOST = section.offset().top - 100;
     $('html,body').stop().animate({scrollTop:sectionOST});
   });
 
@@ -241,7 +241,7 @@ $(function(){
       sec4Content.removeClass('active');
     }
   }); //scroll
-  // ----- mobile -- section2, 3, 4 animation -----
+  // -----  section2, 3, 4 animation -----
 
 
 

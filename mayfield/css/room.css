@@ -536,14 +536,11 @@ body {
   display: flex;
 
   /* animation */
-  position: relative;
-  top: -50px;
   opacity: 0;
   transition: .7s;
 }
 
 .section3.active{
-  top: 0;
   opacity: 1;
 }
 

@@ -31,8 +31,8 @@
   --about-point-color: rgba(255,97,48,.25);
   --about-bg-color: #fcffd6;
   --site-point-color: rgba(86,79,230,.25);
-  --site-bg-color: #9fcdec;
-  --design-bg-color: #ffc4d4;
+  --site-bg-color: #ffc4d4;
+  --design-bg-color: #9fcdec;
 }
 
 body {
@@ -41,7 +41,7 @@ body {
 
 .margin {
   max-width: 1500px;
-  width: 75%;
+  width: 80%;
 }
 
 .wrap {
@@ -512,6 +512,7 @@ body {
   font-size: var(--sub-title-font-size);
   background-color: var(--site-bg-color);
   overflow: hidden;
+  
 }
 
 .section3 .site_item .text_box h3::before {
@@ -546,6 +547,7 @@ body {
 
 .section3 .site_item .text_box li h4 {
   width: 65px;
+  white-space: nowrap;
 }
 
 .section3 .site_item .text_box li p {
@@ -764,7 +766,7 @@ body {
 }
 
 .section5 .text_box li {
-  font-size: 28px;
+  font-size: 22px;
   line-height: 40px;
 }
 /* -------------- section5 contact ------------- */
@@ -950,7 +952,7 @@ body {
   .header .header_menu {
     position: fixed;
     top: 150px;
-    width: 75%;
+    width: 80%;
     height: 100vh;
     pointer-events: none;
   }

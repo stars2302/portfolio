@@ -417,6 +417,10 @@ section .con .text_box .discount_rate {
   font-size: var(--font-size-R);
 }
 /* con text box */
+
+.section2 .main_img h2 span {
+  color: #fff;
+}
 /* ----------------- section ----------------- */
 
 

@@ -226,32 +226,9 @@ body {
 }
 /* ------- section1 > text_box ------- */
 
-/* ------- section1 > slide loding animation ------- */
-.slide_loding_bar_container {
-  position: absolute;
-  width: 250px;
-  height: 1px;
-  background-color: rgba(255, 255, 255, 0.5);
-  bottom: 90px;
-  left: 100px;
-}
-
-.slide_loding_bar {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 3px;
-  background-color: #fff;
-  animation: slideLoding 5.3s infinite;
-}
-
-@keyframes slideLoding {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 100%;
-  }
+.section1 .bx-controls-direction,
+.section1 .bx-wrapper .bx-pager {
+  left: 90px;
 }
 /* ------------- container > section1 ------------- */
 
